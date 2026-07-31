@@ -38,10 +38,10 @@ export function fitBand(score: SubScore): FitBand {
   if (score === UNAVAILABLE) {
     return 'unavailable';
   }
-  if (score >= 50) {
+  if (score >= 70) {
     return 'high';
   }
-  if (score >= 30) {
+  if (score >= 40) {
     return 'medium';
   }
   return 'low';
