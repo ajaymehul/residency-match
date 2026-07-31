@@ -12,8 +12,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['"DM Sans"', 'system-ui', '-apple-system', 'sans-serif'],
-        serif: ['"Source Serif 4"', 'Georgia', 'serif'],
+        sans: ['"Outfit"', 'system-ui', '-apple-system', 'sans-serif'],
+        serif: ['"Fraunces"', 'Georgia', 'serif'],
       },
     },
   },

@@ -74,7 +74,7 @@ function App() {
       <div className="flex items-center justify-center h-screen">
         <div className="text-center">
           <h1 className="text-2xl font-serif font-semibold text-brand-indigo mb-3">
-            Residency Program Explorer
+            Residency Match
           </h1>
           <p className="text-gray-500">Loading program data...</p>
         </div>
@@ -128,8 +128,8 @@ function AppLayout({ programs, summary }: { programs: GeocodedProgram[]; summary
   return (
     <div className="flex flex-col h-screen overflow-hidden">
       <header className="flex-shrink-0 bg-brand-indigo px-4 py-2.5">
-        <h1 className="text-white font-serif text-lg font-semibold tracking-tight m-0">
-          Residency Program Explorer
+        <h1 className="text-white font-sans text-xl font-bold tracking-tight m-0">
+          Residency Match
         </h1>
       </header>
 
