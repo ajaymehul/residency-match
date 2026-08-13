@@ -30,21 +30,21 @@ function makeScoredProgram(overrides: Partial<ScoredProgram> & { id: string; nam
 }
 
 describe('fitBand', () => {
-  it('returns "high" for scores >= 70', () => {
-    expect(fitBand(70)).toBe('high');
+  it('returns "high" for scores >= 60', () => {
+    expect(fitBand(60)).toBe('high');
     expect(fitBand(100)).toBe('high');
     expect(fitBand(85)).toBe('high');
   });
 
-  it('returns "medium" for scores 40–69', () => {
-    expect(fitBand(40)).toBe('medium');
-    expect(fitBand(69)).toBe('medium');
-    expect(fitBand(55)).toBe('medium');
+  it('returns "medium" for scores 35–59', () => {
+    expect(fitBand(35)).toBe('medium');
+    expect(fitBand(59)).toBe('medium');
+    expect(fitBand(45)).toBe('medium');
   });
 
-  it('returns "low" for scores < 40', () => {
+  it('returns "low" for scores < 35', () => {
     expect(fitBand(0)).toBe('low');
-    expect(fitBand(39)).toBe('low');
+    expect(fitBand(34)).toBe('low');
     expect(fitBand(20)).toBe('low');
   });
 
