@@ -45,6 +45,8 @@ export interface ScrapedProgram {
     categorical_filled?: number;
     preliminary_offered?: number;
     preliminary_filled?: number;
+    positions_offered?: number | string;
+    positions_filled?: number | string;
   };
 
   // Chart data (from const locals JavaScript)
