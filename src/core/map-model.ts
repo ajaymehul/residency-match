@@ -25,23 +25,22 @@ export interface MapMarker {
 }
 
 /**
- * Classify a Fit_Score into a visual band.
+ * Classify a score into a visual band. Uses matchScore (number | null)
+ * or falls back to fitScore (SubScore).
  *
- * - high: score >= 70
- * - medium: 40 <= score < 70
- * - low: score < 40
- * - unavailable: UNAVAILABLE sentinel
- *
- * Requirements: 3.4
+ * - high: score >= 60
+ * - medium: 35 <= score < 60
+ * - low: score < 35
+ * - unavailable: null or UNAVAILABLE sentinel
  */
-export function fitBand(score: SubScore): FitBand {
-  if (score === UNAVAILABLE) {
+export function fitBand(score: SubScore | number | null): FitBand {
+  if (score === UNAVAILABLE || score === null || score === undefined) {
     return 'unavailable';
   }
-  if (score >= 70) {
+  if (score >= 60) {
     return 'high';
   }
-  if (score >= 40) {
+  if (score >= 35) {
     return 'medium';
   }
   return 'low';
@@ -86,7 +85,7 @@ export function buildMarkers(programs: ScoredProgram[]): MapMarker[] {
         id: p.id,
         lat: p.coordinates.lat,
         lng: p.coordinates.lng,
-        band: fitBand(p.fitScore),
+        band: fitBand(p.matchScore ?? p.fitScore),
       });
     } else {
       // Multiple programs share coordinates — fan out deterministically
@@ -100,7 +99,7 @@ export function buildMarkers(programs: ScoredProgram[]): MapMarker[] {
           id: p.id,
           lat: p.coordinates.lat + OFFSET_RADIUS * Math.cos(angle),
           lng: p.coordinates.lng + OFFSET_RADIUS * Math.sin(angle),
-          band: fitBand(p.fitScore),
+          band: fitBand(p.matchScore ?? p.fitScore),
         });
       }
     }

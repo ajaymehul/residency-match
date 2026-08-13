@@ -1,6 +1,6 @@
 /**
  * MapView component: renders a react-leaflet map with program markers
- * color-coded by FitBand, tech hub markers with distinct DivIcon,
+ * color-coded by FitBand, major city markers with distinct DivIcon,
  * and handles selection/centering interactions.
  *
  * Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 8.6, 8.7
@@ -37,10 +37,10 @@ const BAND_LABELS: Record<FitBand, string> = {
   unavailable: 'Unavailable',
 };
 
-// --- Tech Hub DivIcon (star shape for visual distinction) ---
-function createTechHubIcon(): L.DivIcon {
+// --- Major City DivIcon (diamond shape for visual distinction) ---
+function createMajorCityIcon(): L.DivIcon {
   return L.divIcon({
-    className: 'tech-hub-marker',
+    className: 'major-city-marker',
     html: `<div style="
       width: 24px;
       height: 24px;
@@ -50,7 +50,7 @@ function createTechHubIcon(): L.DivIcon {
       font-size: 18px;
       color: #6366f1;
       filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
-    " aria-label="Tech Hub">◆</div>`,
+    " aria-label="Major City">◆</div>`,
     iconSize: [24, 24],
     iconAnchor: [12, 12],
   });
@@ -58,7 +58,7 @@ function createTechHubIcon(): L.DivIcon {
 
 // --- Inner component that accesses the map instance ---
 function MapController() {
-  const { derived, selectedProgramId, techHubs } = useAppState();
+  const { derived, selectedProgramId, techHubs: majorCities } = useAppState();
   const { bounds, markers } = derived;
   const map = useMap();
   const previousSelectedId = useRef<string | null>(null);
@@ -93,16 +93,16 @@ function MapController() {
 
   return (
     <>
-      {/* Tech hub markers (Req 3.6) */}
-      {techHubs.map((hub) => (
+      {/* Major city markers */}
+      {majorCities.map((city) => (
         <Marker
-          key={`hub-${hub.name}`}
-          position={[hub.lat, hub.lng]}
-          icon={createTechHubIcon()}
+          key={`city-${city.name}`}
+          position={[city.lat, city.lng]}
+          icon={createMajorCityIcon()}
           interactive={true}
         >
           <Tooltip direction="top" offset={[0, -12]}>
-            <span>🏢 Tech Hub: {hub.name}</span>
+            <span>🏢 {city.name}</span>
           </Tooltip>
         </Marker>
       ))}

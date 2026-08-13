@@ -17,11 +17,9 @@
  */
 
 import { useCallback, useEffect, useState } from 'react';
-import * as XLSX from 'xlsx';
 
-import { parseWorkbook } from '../core/data-loader';
-import { geocodeAllWithSummary } from '../core/geocoder';
-import { SHEET_CONFIGS } from '../core/sheet-config';
+import { loadScrapedPrograms } from '../core/scraped-data-loader';
+import type { ScrapedProgram } from '../core/scraped-data-loader';
 import type { GeocodedProgram, LoadSummary } from '../core/types';
 import type { CityDataset } from '../core/geocoder';
 import citiesDataset from '../core/us-cities.json';
@@ -33,8 +31,8 @@ import { ListView } from './ListView';
 import { FilterPanel } from './FilterPanel';
 import { ProgramDetail } from './ProgramDetail';
 
-/** The fetch path for Programs.xlsx, relative to the Vite base URL. */
-const PROGRAMS_PATH = `${import.meta.env.BASE_URL}Programs.xlsx`;
+/** The fetch path for scraped data JSON. */
+const SCRAPED_PATH = `${import.meta.env.BASE_URL}program_data.json`;
 
 type AppStatus =
   | { kind: 'loading' }
@@ -48,20 +46,18 @@ function App() {
     setStatus({ kind: 'loading' });
 
     try {
-      const response = await fetch(PROGRAMS_PATH);
+      const response = await fetch(SCRAPED_PATH);
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
 
-      const arrayBuffer = await response.arrayBuffer();
-      const workbook = XLSX.read(arrayBuffer);
-      const { programs, summary } = parseWorkbook(workbook, SHEET_CONFIGS);
-      const result = geocodeAllWithSummary(programs, citiesDataset as unknown as CityDataset, summary);
+      const rawPrograms: ScrapedProgram[] = await response.json();
+      const result = loadScrapedPrograms(rawPrograms, citiesDataset as unknown as CityDataset);
 
       setStatus({ kind: 'ready', programs: result.programs, summary: result.summary });
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
-      setStatus({ kind: 'error', path: PROGRAMS_PATH, message });
+      setStatus({ kind: 'error', path: SCRAPED_PATH, message });
     }
   }, []);
 

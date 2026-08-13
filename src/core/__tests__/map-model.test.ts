@@ -23,6 +23,7 @@ function makeScoredProgram(overrides: Partial<ScoredProgram> & { id: string; nam
     techHubProximity: 50,
     nearestHub: { name: 'Austin', distanceMiles: 10 },
     fitScore: 70,
+    matchScore: null,
     availability: { step2: true, img: true, proximity: true },
     ...overrides,
   };

@@ -11,6 +11,8 @@ import type { Coordinates, FieldValue, GeocodedProgram, ScoreRange, ScoredProgra
 import { UNAVAILABLE } from './types';
 import type { SubScore } from './types';
 import { DEFAULT_WEIGHTS } from './tech-hubs';
+import { computeMatchScore, DEFAULT_MATCH_WEIGHTS } from './match-scoring';
+import type { EnrichedProgram } from './scraped-data-loader';
 
 /** Earth's mean radius in miles. */
 const EARTH_RADIUS_MILES = 3958.8;
@@ -233,6 +235,7 @@ export function scoreProgram(
   applicantScore: number,
   weights: Weights,
   hubs: TechHub[],
+  matchWeights?: import('./match-scoring').MatchWeights,
 ): ScoredProgram {
   // Compute nearest hub (only if program has coordinates)
   let nearestHubResult: { name: string; distanceMiles: number } | null = null;
@@ -266,6 +269,14 @@ export function scoreProgram(
     proximity: techHubProximityScore !== UNAVAILABLE,
   };
 
+  // Compute new match score if program has scraped data
+  let matchScoreValue: number | null = null;
+  const enriched = program as unknown as EnrichedProgram;
+  if (enriched.scraped) {
+    const result = computeMatchScore(enriched, applicantScore, matchWeights ?? DEFAULT_MATCH_WEIGHTS, hubs);
+    matchScoreValue = result.matchScore;
+  }
+
   return {
     ...program,
     step2Fit: step2FitScore,
@@ -273,6 +284,7 @@ export function scoreProgram(
     techHubProximity: techHubProximityScore,
     nearestHub: nearestHubResult,
     fitScore: compositeFitScore,
+    matchScore: matchScoreValue,
     availability,
   };
 }

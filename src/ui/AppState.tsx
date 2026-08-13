@@ -31,11 +31,14 @@ import { applyFilters, sortPrograms } from '../core/filter-sort';
 import { buildMarkers, computeBounds } from '../core/map-model';
 import type { LatLngBounds, MapMarker } from '../core/map-model';
 import { DEFAULT_TECH_HUBS, DEFAULT_WEIGHTS } from '../core/tech-hubs';
+import type { MatchWeights } from '../core/match-scoring';
+import { DEFAULT_MATCH_WEIGHTS } from '../core/match-scoring';
 
 /** Actions exposed by the app state context for mutating state. */
 export interface AppStateActions {
   setApplicantScore: (score: number) => void;
   setWeights: (weights: Weights) => void;
+  setMatchWeights: (weights: MatchWeights) => void;
   setFilters: (filters: Filters) => void;
   setSortColumn: (column: SortColumn) => void;
   setSortDirection: (direction: 'asc' | 'desc') => void;
@@ -61,6 +64,7 @@ export interface AppStateDerived {
 export interface AppStateValue {
   applicantScore: number;
   weights: Weights;
+  matchWeights: MatchWeights;
   filters: Filters;
   sortColumn: SortColumn;
   sortDirection: 'asc' | 'desc';
@@ -94,8 +98,9 @@ export interface AppStateProviderProps {
 export function AppStateProvider({ children }: AppStateProviderProps) {
   const [applicantScore, setApplicantScore] = useState(223);
   const [weights, setWeights] = useState<Weights>(DEFAULT_WEIGHTS);
+  const [matchWeights, setMatchWeights] = useState<MatchWeights>(DEFAULT_MATCH_WEIGHTS);
   const [filters, setFilters] = useState<Filters>({ step2Compatible: true, hideIncompleteData: true });
-  const [sortColumn, setSortColumn] = useState<SortColumn>('fitScore');
+  const [sortColumn, setSortColumn] = useState<SortColumn>('matchScore');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('desc');
   const [selectedProgramId, setSelectedProgramId] = useState<string | null>(null);
   const [programs, setPrograms] = useState<GeocodedProgram[]>([]);
@@ -135,8 +140,8 @@ export function AppStateProvider({ children }: AppStateProviderProps) {
 
   // Derivation: score all programs when applicantScore, weights, or techHubs change
   const scoredPrograms = useMemo<ScoredProgram[]>(
-    () => programs.map((p) => scoreProgram(p, applicantScore, weights, techHubs)),
-    [programs, applicantScore, weights, techHubs],
+    () => programs.map((p) => scoreProgram(p, applicantScore, weights, techHubs, matchWeights)),
+    [programs, applicantScore, weights, techHubs, matchWeights],
   );
 
   // Derivation: apply filters to scored programs
@@ -176,6 +181,7 @@ export function AppStateProvider({ children }: AppStateProviderProps) {
     () => ({
       setApplicantScore,
       setWeights,
+      setMatchWeights,
       setFilters,
       setSortColumn,
       setSortDirection,
@@ -205,6 +211,7 @@ export function AppStateProvider({ children }: AppStateProviderProps) {
     () => ({
       applicantScore,
       weights,
+      matchWeights,
       filters,
       sortColumn,
       sortDirection,
@@ -219,6 +226,7 @@ export function AppStateProvider({ children }: AppStateProviderProps) {
     [
       applicantScore,
       weights,
+      matchWeights,
       filters,
       sortColumn,
       sortDirection,

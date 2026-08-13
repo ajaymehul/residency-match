@@ -2,7 +2,7 @@
  * FilterPanel component.
  *
  * Controls for all filters (specialty, state, region, min Fit_Score,
- * min IMG_Friendliness, max tech hub distance, Step 2 compatibility),
+ * min IMG_Friendliness, max city distance, Step 2 compatibility),
  * a clear-all action, applicant score input (default 223), and three
  * weight sliders with "reset to 40/40/20" and a minimum guard against
  * all-zero weights. Displayed weights renormalize to 100%.
@@ -11,34 +11,12 @@
  */
 
 import { useMemo, type ChangeEvent } from 'react';
-import type { Specialty, Weights } from '../core/types';
+import type { Specialty } from '../core/types';
 import { useAppState } from './AppState';
 import { ExportButton } from './ExportButton';
 
-/** Minimum value a single weight slider can hold to prevent all-zero. */
-const MIN_WEIGHT = 0.1;
-
-/** Default weights matching the spec: 40/40/20. */
-const DEFAULT_WEIGHTS: Weights = { step2: 0.4, img: 0.4, proximity: 0.2 };
-
-/**
- * Renormalize raw weights so they sum to 100% for display purposes.
- * Returns percentages (0–100) for each weight.
- */
-function renormalizeForDisplay(weights: Weights): { step2: number; img: number; proximity: number } {
-  const total = weights.step2 + weights.img + weights.proximity;
-  if (total === 0) {
-    return { step2: 33, img: 33, proximity: 34 };
-  }
-  return {
-    step2: Math.round((weights.step2 / total) * 100),
-    img: Math.round((weights.img / total) * 100),
-    proximity: Math.round((weights.proximity / total) * 100),
-  };
-}
-
 export function FilterPanel() {
-  const { applicantScore, weights, filters, derived, actions } = useAppState();
+  const { applicantScore, matchWeights, filters, derived, actions } = useAppState();
 
   const uniqueStates = useMemo(() => {
     const states = new Set<string>();
@@ -55,8 +33,6 @@ export function FilterPanel() {
     }
     return Array.from(regions).sort();
   }, [derived.scoredPrograms]);
-
-  const displayWeights = renormalizeForDisplay(weights);
 
   // --- Filter handlers ---
 
@@ -116,7 +92,7 @@ export function FilterPanel() {
     }
   };
 
-  const handleMaxTechHubDistanceChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleMaxCityDistanceChange = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     if (value === '' || Number(value) <= 0) {
       const { maxTechHubDistance: _, ...rest } = filters;
@@ -157,20 +133,6 @@ export function FilterPanel() {
     }
   };
 
-  // --- Weight slider handlers ---
-
-  const handleWeightChange = (key: keyof Weights, rawValue: number) => {
-    const next = { ...weights, [key]: rawValue };
-    if (next.step2 === 0 && next.img === 0 && next.proximity === 0) {
-      next[key] = MIN_WEIGHT;
-    }
-    actions.setWeights(next);
-  };
-
-  const handleResetWeights = () => {
-    actions.setWeights(DEFAULT_WEIGHTS);
-  };
-
   return (
     <div className="space-y-4 text-sm" role="region" aria-label="Filters and Weights">
       {/* Applicant Score */}
@@ -201,56 +163,86 @@ export function FilterPanel() {
         </legend>
         <div className="space-y-3">
           <div>
-            <label htmlFor="weight-step2" className="block text-xs text-gray-600 mb-0.5">
-              Step2 Fit: {displayWeights.step2}%
+            <label htmlFor="weight-scoreFit" className="block text-xs text-gray-600 mb-0.5">
+              Score Fit: {matchWeights.scoreFit}
             </label>
             <input
-              id="weight-step2"
+              id="weight-scoreFit"
               type="range"
               min={0}
-              max={1}
-              step={0.05}
-              value={weights.step2}
-              onChange={(e) => handleWeightChange('step2', Number(e.target.value))}
+              max={50}
+              step={5}
+              value={matchWeights.scoreFit}
+              onChange={(e) => actions.setMatchWeights({ ...matchWeights, scoreFit: Number(e.target.value) })}
               className="w-full accent-brand-purple"
             />
           </div>
           <div>
-            <label htmlFor="weight-img" className="block text-xs text-gray-600 mb-0.5">
-              IMG Friendliness: {displayWeights.img}%
+            <label htmlFor="weight-imgRate" className="block text-xs text-gray-600 mb-0.5">
+              IMG Interview Rate: {matchWeights.imgInterviewRate}
             </label>
             <input
-              id="weight-img"
+              id="weight-imgRate"
               type="range"
               min={0}
-              max={1}
-              step={0.05}
-              value={weights.img}
-              onChange={(e) => handleWeightChange('img', Number(e.target.value))}
+              max={50}
+              step={5}
+              value={matchWeights.imgInterviewRate}
+              onChange={(e) => actions.setMatchWeights({ ...matchWeights, imgInterviewRate: Number(e.target.value) })}
               className="w-full accent-brand-purple"
             />
           </div>
           <div>
-            <label htmlFor="weight-proximity" className="block text-xs text-gray-600 mb-0.5">
-              Tech Hub Proximity: {displayWeights.proximity}%
+            <label htmlFor="weight-selectivity" className="block text-xs text-gray-600 mb-0.5">
+              Selectivity: {matchWeights.selectivity}
             </label>
             <input
-              id="weight-proximity"
+              id="weight-selectivity"
               type="range"
               min={0}
-              max={1}
-              step={0.05}
-              value={weights.proximity}
-              onChange={(e) => handleWeightChange('proximity', Number(e.target.value))}
+              max={50}
+              step={5}
+              value={matchWeights.selectivity}
+              onChange={(e) => actions.setMatchWeights({ ...matchWeights, selectivity: Number(e.target.value) })}
+              className="w-full accent-brand-purple"
+            />
+          </div>
+          <div>
+            <label htmlFor="weight-imgRep" className="block text-xs text-gray-600 mb-0.5">
+              IMG Representation: {matchWeights.imgRepresentation}
+            </label>
+            <input
+              id="weight-imgRep"
+              type="range"
+              min={0}
+              max={50}
+              step={5}
+              value={matchWeights.imgRepresentation}
+              onChange={(e) => actions.setMatchWeights({ ...matchWeights, imgRepresentation: Number(e.target.value) })}
+              className="w-full accent-brand-purple"
+            />
+          </div>
+          <div>
+            <label htmlFor="weight-cityProx" className="block text-xs text-gray-600 mb-0.5">
+              Major City Proximity: {matchWeights.techHubProximity}
+            </label>
+            <input
+              id="weight-cityProx"
+              type="range"
+              min={0}
+              max={50}
+              step={5}
+              value={matchWeights.techHubProximity}
+              onChange={(e) => actions.setMatchWeights({ ...matchWeights, techHubProximity: Number(e.target.value) })}
               className="w-full accent-brand-purple"
             />
           </div>
           <button
             type="button"
-            onClick={handleResetWeights}
+            onClick={() => actions.setMatchWeights({ scoreFit: 25, imgInterviewRate: 25, selectivity: 20, imgRepresentation: 15, techHubProximity: 15 })}
             className="w-full px-3 py-1.5 text-xs border border-brand-purple text-brand-purple rounded-md hover:bg-brand-purple hover:text-white transition-colors"
           >
-            Reset to 40/40/20
+            Reset to 25/25/20/15/15
           </button>
         </div>
       </fieldset>
@@ -361,10 +353,10 @@ export function FilterPanel() {
             />
           </div>
 
-          {/* Max Tech Hub Distance */}
+          {/* Max Major City Distance */}
           <div>
             <label htmlFor="filter-max-distance" className="block text-xs text-gray-600 mb-1">
-              Max Tech Hub Distance (miles)
+              Max City Distance (miles)
             </label>
             <input
               id="filter-max-distance"
@@ -373,7 +365,7 @@ export function FilterPanel() {
               max={500}
               step={5}
               value={filters.maxTechHubDistance ?? ''}
-              onChange={handleMaxTechHubDistanceChange}
+              onChange={handleMaxCityDistanceChange}
               placeholder="150"
               className="w-full px-2.5 py-1.5 bg-white border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-brand-purple/40 focus:border-brand-purple"
             />
@@ -450,9 +442,11 @@ export function FilterPanel() {
           Fit Score is a weighted average of three sub-scores:
         </p>
         <ul className="text-xs text-gray-500 leading-relaxed pl-4 space-y-1 list-disc">
-          <li><strong className="text-gray-700">Step2 Fit ({displayWeights.step2}%)</strong> — How well your score matches the program's range.</li>
-          <li><strong className="text-gray-700">IMG Friendliness ({displayWeights.img}%)</strong> — The program's US IMG acceptance rate scaled to 0–100.</li>
-          <li><strong className="text-gray-700">Tech Hub Proximity ({displayWeights.proximity}%)</strong> — 100 if adjacent to a tech hub, 0 at 150+ miles away.</li>
+          <li><strong className="text-gray-700">Score Fit ({matchWeights.scoreFit})</strong> — How well your Step 2 score fits the program's US IMG invited range.</li>
+          <li><strong className="text-gray-700">IMG Interview Rate ({matchWeights.imgInterviewRate})</strong> — What % of US IMG applicants get interviews.</li>
+          <li><strong className="text-gray-700">Selectivity ({matchWeights.selectivity})</strong> — Favorable ratio of positions to applicants for US IMGs.</li>
+          <li><strong className="text-gray-700">IMG Representation ({matchWeights.imgRepresentation})</strong> — What % of current residents are US IMGs.</li>
+          <li><strong className="text-gray-700">City Proximity ({matchWeights.techHubProximity})</strong> — 100 if adjacent to a major city, 0 at 150+ miles away.</li>
         </ul>
         <p className="text-xs text-gray-500 leading-relaxed mt-1.5">
           If a sub-score can't be computed (missing data), its weight is redistributed to the others.

@@ -31,6 +31,7 @@ function makeProgram(overrides: Partial<ScoredProgram> = {}): ScoredProgram {
     techHubProximity: 90,
     nearestHub: { name: 'Boston', distanceMiles: 5 },
     fitScore: 75,
+    matchScore: null,
     availability: { step2: true, img: true, proximity: true },
     ...overrides,
   };
@@ -173,6 +174,7 @@ describe('sortPrograms', () => {
       techHubProximity: 90,
       nearestHub: { name: 'Boston', distanceMiles: 5 },
       fitScore: 75,
+      matchScore: null,
       availability: { step2: true, img: true, proximity: true },
       ...overrides,
     };

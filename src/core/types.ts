@@ -76,17 +76,23 @@ export interface ScoredProgram extends GeocodedProgram {
   step2Fit: SubScore;
   imgFriendliness: SubScore;
   techHubProximity: SubScore;
+  /** Nearest major city info */
   nearestHub: { name: string; distanceMiles: number } | null;
   fitScore: SubScore;
+  /** New 5-signal match chance score (0-100 or null) */
+  matchScore: number | null;
   availability: { step2: boolean; img: boolean; proximity: boolean };
 }
 
-/** A US metro area with significant tech industry presence. */
-export interface TechHub {
+/** A US metropolitan area relevant for partner employment. */
+export interface MajorCity {
   name: string;
   lat: number;
   lng: number;
 }
+
+/** @deprecated Use MajorCity instead */
+export type TechHub = MajorCity;
 
 /** Sub-score weights for the composite Fit_Score. Default 0.4 / 0.4 / 0.2. */
 export interface Weights {
@@ -117,7 +123,8 @@ export interface Filters {
   regions?: string[];
   minFitScore?: number;
   minImgFriendliness?: number;
-  maxTechHubDistance?: number;
+  maxCityDistance?: number;
+  /** @deprecated */ maxTechHubDistance?: number;
   /** applicantScore >= range.low */
   step2Compatible?: boolean;
   /** Hide programs missing both Step 2 score range and US IMG rate. */
@@ -131,7 +138,10 @@ export type SortColumn =
   | 'city'
   | 'state'
   | 'fitScore'
+  | 'matchScore'
   | 'step2Fit'
   | 'imgFriendliness'
+  | 'cityProximity'
+  | 'cityDistance'
   | 'techHubProximity'
   | 'techHubDistance';

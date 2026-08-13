@@ -1,20 +1,17 @@
 /**
- * Default Tech Hub configuration and scoring weights.
+ * Default Major City configuration and scoring weights.
  *
- * Tech hubs are US metropolitan areas with significant technology industry
- * presence. The proximity sub-score measures how close a residency program
- * is to the nearest hub (Requirement 6.1).
- *
- * Default weights define the composite Fit_Score formula (Requirement 7.2).
+ * Major cities are US metropolitan areas where the applicant's partner
+ * could find tech employment. The proximity sub-score measures how close
+ * a residency program is to the nearest major city.
  */
 
-import type { TechHub, Weights } from './types';
+import type { MajorCity, Weights } from './types';
 
 /**
- * Default list of US tech hubs with approximate metro-center coordinates.
- * Requirement 6.1: configurable list with name and coordinates.
+ * Default list of US major cities with approximate metro-center coordinates.
  */
-export const DEFAULT_TECH_HUBS: TechHub[] = [
+export const DEFAULT_MAJOR_CITIES: MajorCity[] = [
   { name: 'SF Bay Area', lat: 37.7749, lng: -122.4194 },
   { name: 'Seattle', lat: 47.6062, lng: -122.3321 },
   { name: 'Austin', lat: 30.2672, lng: -97.7431 },
@@ -32,9 +29,11 @@ export const DEFAULT_TECH_HUBS: TechHub[] = [
   { name: 'Salt Lake City', lat: 40.7608, lng: -111.891 },
 ];
 
+// Keep old name as alias for backward compatibility during migration
+export const DEFAULT_TECH_HUBS = DEFAULT_MAJOR_CITIES;
+
 /**
  * Default sub-score weights for the composite Fit_Score.
- * Requirement 7.2: 40% Step2_Fit, 40% IMG_Friendliness, 20% Tech_Hub_Proximity.
  */
 export const DEFAULT_WEIGHTS: Weights = {
   step2: 0.4,

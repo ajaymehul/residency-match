@@ -105,13 +105,17 @@ function getSortValue(
       return program.state;
     case 'fitScore':
       return program.fitScore;
+    case 'matchScore':
+      return program.matchScore ?? null;
     case 'step2Fit':
       return program.step2Fit;
     case 'imgFriendliness':
       return program.imgFriendliness;
     case 'techHubProximity':
+    case 'cityProximity':
       return program.techHubProximity;
     case 'techHubDistance':
+    case 'cityDistance':
       return program.nearestHub === null ? null : program.nearestHub.distanceMiles;
   }
 }

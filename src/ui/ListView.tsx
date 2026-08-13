@@ -41,15 +41,13 @@ function isInsufficientData(program: ScoredProgram): boolean {
 
 /** Column definitions for the list view */
 const COLUMNS: { key: SortColumn; label: string }[] = [
-  { key: 'name', label: 'Name' },
-  { key: 'specialty', label: 'Specialty' },
+  { key: 'name', label: 'Program' },
   { key: 'city', label: 'City' },
   { key: 'state', label: 'State' },
-  { key: 'fitScore', label: 'Fit Score' },
-  { key: 'step2Fit', label: 'Step2 Fit' },
-  { key: 'imgFriendliness', label: 'IMG Friendly' },
-  { key: 'techHubProximity', label: 'Hub Proximity' },
-  { key: 'techHubDistance', label: 'Nearest Hub' },
+  { key: 'matchScore', label: 'Match Score' },
+  { key: 'imgFriendliness', label: 'US IMG Int. Rate' },
+  { key: 'techHubProximity', label: 'City Prox.' },
+  { key: 'techHubDistance', label: 'Nearest City' },
 ];
 
 export function ListView() {
@@ -109,6 +107,8 @@ export function ListView() {
         return program.state;
       case 'fitScore':
         return formatScore(program.fitScore);
+      case 'matchScore':
+        return program.matchScore !== null ? program.matchScore.toFixed(0) : '—';
       case 'step2Fit':
         return formatScore(program.step2Fit);
       case 'imgFriendliness':
