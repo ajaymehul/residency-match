@@ -271,13 +271,14 @@ export function ProgramDetail() {
       )}
 
       {/* Application Trends */}
-      {(scraped?.application_trends_2026 || scraped?.interview_rates_by_type?.parameters) && (
+      {(scraped?.application_trends_2026 || scraped?.interview_rates_by_type?.parameters || (scraped as any)?.application_history) && (
         <section className="px-3 py-2 border-b border-gray-100">
           <h3 className="text-[11px] uppercase tracking-wider text-brand-mauve font-semibold mb-1.5">2026 Application Data</h3>
           <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-xs m-0">
             <dt className="text-gray-500">Total Applicants</dt>
             <dd className="text-gray-800 font-medium m-0">
               {scraped.application_trends_2026?.eras_applicants 
+                ?? (scraped as any)?.application_history?.n_APPS2026
                 ?? (scraped.interview_rates_by_type?.parameters 
                   ? (scraped.interview_rates_by_type.parameters.countUsmd ?? 0) + (scraped.interview_rates_by_type.parameters.countUsdo ?? 0) + (scraped.interview_rates_by_type.parameters.countUsimg ?? 0) + (scraped.interview_rates_by_type.parameters.countFmg ?? 0)
                   : 'N/A')}
