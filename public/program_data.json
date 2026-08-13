@@ -789,7 +789,18 @@
     ],
     "program_strengths": [
       "Addiction medicine Hospital Medicine Comprehensive Pregnancy Care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 343,
+      "invited_to_interview": 168,
+      "interview_rate_pct": 49.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 343,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 49.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/03059a02-9829-4b03-dcc9-bf9962e92849",
@@ -1565,7 +1576,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 740,
+      "invited_to_interview": 34,
+      "interview_rate_pct": 4.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 740,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 4.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/3eeafb59-e8b7-ac82-e184-75a182882365",
@@ -2359,7 +2381,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 594,
+      "invited_to_interview": 141,
+      "interview_rate_pct": 23.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 594,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 23.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/44a38da7-8d52-2db7-b969-1e332b9cfc10",
@@ -3141,7 +3174,18 @@
     "program_strengths": [
       "Addiction medicine Advanced procedural skills Wellness/Well-being"
     ],
-    "name": "Heritage Valley Health System Program"
+    "name": "Heritage Valley Health System Program",
+    "application_trends_2026": {
+      "eras_applicants": 520,
+      "invited_to_interview": 87,
+      "interview_rate_pct": 16.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 520,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 16.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/7bcb024a-dc9f-86af-97da-a0dbe060ebae",
@@ -3928,7 +3972,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Sports Medicine Women's Health"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 516,
+      "invited_to_interview": 62,
+      "interview_rate_pct": 12.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 516,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 12.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/6fae7cab-a4e7-99c9-e0fd-9df3e0886337",
@@ -4710,7 +4765,18 @@
         "programOffering": "40%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 602,
+      "invited_to_interview": 145,
+      "interview_rate_pct": 24.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 602,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 24.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/8faba1bf-d231-0b31-b09f-0ccc4a570cfe",
@@ -5517,7 +5583,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Integrative medicine International Medicine/Global Health"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 602,
+      "invited_to_interview": 233,
+      "interview_rate_pct": 38.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 602,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 38.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/a73cc809-1873-4fd0-c511-aae19ddd8ce2",
@@ -6314,7 +6391,18 @@
     "program_strengths": [
       "Hospital Medicine Sports Medicine Wellness/Well-being"
     ],
-    "name": "HCA Healthcare/TriStar Nashville/Southern Hills Medical Center Program"
+    "name": "HCA Healthcare/TriStar Nashville/Southern Hills Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 502,
+      "invited_to_interview": 130,
+      "interview_rate_pct": 25.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 502,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 25.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/186ee137-7431-d0bd-c3cf-bedc0f7c8621",
@@ -7115,7 +7203,18 @@
     ],
     "program_strengths": [
       "Addiction medicine Point of care ultrasound Women's Health"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1093,
+      "invited_to_interview": 195,
+      "interview_rate_pct": 17.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 1093,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 17.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/8d7a43c1-5fcd-1a35-c659-f75efd7e3ba5",
@@ -7916,7 +8015,18 @@
     ],
     "program_strengths": [
       "Care of children Comprehensive Pregnancy Care Hospital Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 403,
+      "invited_to_interview": 111,
+      "interview_rate_pct": 27.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 403,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/75b2305d-c5ea-6bcb-36d1-605136f85d24",
@@ -8719,7 +8829,18 @@
     ],
     "program_strengths": [
       "Behavioral Medicine Comprehensive Pregnancy Care Hospital Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 353,
+      "invited_to_interview": 164,
+      "interview_rate_pct": 46.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 353,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 46.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/44ca886b-5c3c-3501-73eb-05cf6efd5bbd",
@@ -9526,7 +9647,18 @@
     "program_strengths": [
       "Leadership Wellness/Well-being Geriatrics"
     ],
-    "name": "Beebe Healthcare Program"
+    "name": "Beebe Healthcare Program",
+    "application_trends_2026": {
+      "eras_applicants": 580,
+      "invited_to_interview": 159,
+      "interview_rate_pct": 27.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 580,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c1699cd6-9066-0aab-9d00-b60bf13d1fed",
@@ -10289,7 +10421,18 @@
     ],
     "program_strengths": [
       "Preventative Medicine and/or Occupational Medicine Health Equity Value-based care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 797,
+      "invited_to_interview": 111,
+      "interview_rate_pct": 13.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 797,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 13.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/a0f51b47-58cd-4024-1521-e3d88845b3a8",
@@ -11100,7 +11243,18 @@
     ],
     "program_strengths": [
       "Addiction medicine Comprehensive Pregnancy Care Hospital Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 713,
+      "invited_to_interview": 222,
+      "interview_rate_pct": 31.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 713,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 31.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/a18fcda4-14a2-31fa-0c5e-0ade0b60e77d",
@@ -11902,7 +12056,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Addiction medicine Wellness/Well-being"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 975,
+      "invited_to_interview": 156,
+      "interview_rate_pct": 16.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 975,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 16.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/2be83620-2fa3-898f-3e31-64d6a66ae1d4",
@@ -12698,7 +12863,18 @@
     ],
     "program_strengths": [
       "Academic Medicine Geriatrics Sports Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 489,
+      "invited_to_interview": 99,
+      "interview_rate_pct": 20.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 489,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/e74e74a3-2ae0-1635-4a91-4097f18975f0",
@@ -13500,7 +13676,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Wellness/Well-being Women's Health"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 353,
+      "invited_to_interview": 125,
+      "interview_rate_pct": 35.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 353,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 35.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b654b80e-ccf3-f47d-7e3c-acf337feedfc",
@@ -14276,7 +14463,18 @@
         "programOffering": "-",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 265,
+      "invited_to_interview": 77,
+      "interview_rate_pct": 29.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 265,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 29.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/201a2321-6069-9774-5ff5-33d0acecf84e",
@@ -15073,7 +15271,18 @@
         "programOffering": "44%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 650,
+      "invited_to_interview": 137,
+      "interview_rate_pct": 21.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 650,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 21.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/46242176-2578-02d0-4428-2f363f159e6b",
@@ -15869,7 +16078,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 432,
+      "invited_to_interview": 57,
+      "interview_rate_pct": 13.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 432,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 13.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/34097f61-a1bb-4481-abb3-946f4e826098",
@@ -16677,7 +16897,18 @@
     ],
     "program_strengths": [
       "Osteopathic care Sports Medicine Point of care ultrasound"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 330,
+      "invited_to_interview": 140,
+      "interview_rate_pct": 42.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 330,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 42.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/eebfc615-04e3-ce30-b3fe-c97dd85540bd",
@@ -17468,7 +17699,18 @@
     ],
     "program_strengths": [
       "Academic Medicine Hospital Medicine Sports Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1060,
+      "invited_to_interview": 214,
+      "interview_rate_pct": 20.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 1060,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/52b29a14-fb38-d624-5486-bb270e591169",
@@ -18258,7 +18500,18 @@
     "program_strengths": [
       "Hospital Medicine Low resourced/Marginalized Populations Reproductive Care"
     ],
-    "name": "Central Iowa Health System (Iowa Lutheran Hospital) Program"
+    "name": "Central Iowa Health System (Iowa Lutheran Hospital) Program",
+    "application_trends_2026": {
+      "eras_applicants": 455,
+      "invited_to_interview": 106,
+      "interview_rate_pct": 23.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 455,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 23.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/83d5c55b-1dfa-6a6e-182e-ebaeb04c5fa3",
@@ -19049,7 +19302,18 @@
     ],
     "program_strengths": [
       "Geriatrics Hospital Medicine Sports Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 493,
+      "invited_to_interview": 133,
+      "interview_rate_pct": 27.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 493,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/cbe5ee63-0ddc-7176-8531-5b2dd76d700c",
@@ -19839,7 +20103,18 @@
     "program_strengths": [
       "Hospital Medicine Comprehensive Pregnancy Care Direct Primary Care"
     ],
-    "name": "UPMC Medical Education Wellsboro/Cole Program"
+    "name": "UPMC Medical Education Wellsboro/Cole Program",
+    "application_trends_2026": {
+      "eras_applicants": 235,
+      "invited_to_interview": 61,
+      "interview_rate_pct": 26.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 235,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 26.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/542b516e-8388-9e33-b6f5-e36cc6dc9929",
@@ -20635,7 +20910,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Hackensack Meridian Health/Palisades Medical Center Program"
+    "name": "Hackensack Meridian Health/Palisades Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 989,
+      "invited_to_interview": 104,
+      "interview_rate_pct": 10.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 989,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 10.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/3741c210-9967-5111-1690-87f7bfa1bbc3",
@@ -21420,7 +21706,18 @@
     ],
     "program_strengths": [
       "Wellness/Well-being Leadership Value-based care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 285,
+      "invited_to_interview": 77,
+      "interview_rate_pct": 27.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 285,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/fa45c3aa-3091-a05c-a0e2-92bb011debd3",
@@ -22220,7 +22517,18 @@
     ],
     "program_strengths": [
       "Lifestyle Medicine/Nutrition/Obesity Medicine Hospital Medicine Osteopathic care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 713,
+      "invited_to_interview": 91,
+      "interview_rate_pct": 12.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 713,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 12.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b5acbb49-9008-7518-4671-048d69081fff",
@@ -23009,7 +23317,18 @@
     ],
     "program_strengths": [
       "Hospice and Palliative Care Hospital Medicine International Medicine/Global Health"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 561,
+      "invited_to_interview": 122,
+      "interview_rate_pct": 21.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 561,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 21.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/11d61c00-1645-d20f-b8ea-a7e366163714",
@@ -23806,7 +24125,18 @@
     ],
     "program_strengths": [
       "Health Equity Hospital Medicine Osteopathic care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1962,
+      "invited_to_interview": 201,
+      "interview_rate_pct": 10.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 1962,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 10.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/58045643-6208-3aab-fd80-130b5df90381",
@@ -24597,7 +24927,18 @@
     "program_strengths": [
       "Care of children Sports Medicine Hospital Medicine"
     ],
-    "name": "Allegheny Health Network Medical Education Consortium/Forbes Hospital Program"
+    "name": "Allegheny Health Network Medical Education Consortium/Forbes Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 375,
+      "invited_to_interview": 85,
+      "interview_rate_pct": 22.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 375,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 22.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/daae1df1-dcf6-1ebd-a837-6d135e7ab0bf",
@@ -25388,7 +25729,18 @@
     ],
     "program_strengths": [
       "Care of children Geriatrics Hospital Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 459,
+      "invited_to_interview": 122,
+      "interview_rate_pct": 26.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 459,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 26.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/cecd8fe9-4fff-a346-d296-f5586805d0cc",
@@ -26175,7 +26527,18 @@
     "program_strengths": [
       "Sports Medicine Osteopathic care Advanced procedural skills"
     ],
-    "name": "Sam Houston Regional Education Consortium Program"
+    "name": "Sam Houston Regional Education Consortium Program",
+    "application_trends_2026": {
+      "eras_applicants": 431,
+      "invited_to_interview": 124,
+      "interview_rate_pct": 28.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 431,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 28.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/4c48f9a5-2977-66b8-4441-d6d3b49a8894",
@@ -26970,7 +27333,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine International Medicine/Global Health Low resourced/Marginalized Populations"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 738,
+      "invited_to_interview": 105,
+      "interview_rate_pct": 14.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 738,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/842760ca-38ed-2f51-4aeb-ebe789cd1449",
@@ -27758,7 +28132,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Jefferson Health Northeast Program"
+    "name": "Jefferson Health Northeast Program",
+    "application_trends_2026": {
+      "eras_applicants": 717,
+      "invited_to_interview": 100,
+      "interview_rate_pct": 13.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 717,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 13.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/5802e1cb-238e-cf7c-3bed-c20ae7a87b71",
@@ -28557,7 +28942,18 @@
         "programOffering": "20%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 313,
+      "invited_to_interview": 96,
+      "interview_rate_pct": 30.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 313,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 30.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/56c6e30e-f3b0-5bc4-f633-ef5ed8097fce",
@@ -29358,7 +29754,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "MultiCare Health System (Tacoma) Program"
+    "name": "MultiCare Health System (Tacoma) Program",
+    "application_trends_2026": {
+      "eras_applicants": 357,
+      "invited_to_interview": 161,
+      "interview_rate_pct": 45.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 357,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 45.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/58f056c7-477c-8e9c-a7c9-ca0993662669",
@@ -30147,7 +30554,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Conway Regional Health System Program"
+    "name": "Conway Regional Health System Program",
+    "application_trends_2026": {
+      "eras_applicants": 259,
+      "invited_to_interview": 115,
+      "interview_rate_pct": 44.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 259,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 44.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/699a4b68-c66a-85dc-95a2-32830336345b",
@@ -30934,7 +31352,18 @@
     ],
     "program_strengths": [
       "Care of children Direct Primary Care Osteopathic care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 224,
+      "invited_to_interview": 53,
+      "interview_rate_pct": 23.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 224,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 23.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/9a33835b-a2e8-888b-b795-7278e91b888f",
@@ -31735,7 +32164,18 @@
     "program_strengths": [
       "Leadership Point of care ultrasound Women's Health"
     ],
-    "name": "Southwest Healthcare Medical Education Consortium Program"
+    "name": "Southwest Healthcare Medical Education Consortium Program",
+    "application_trends_2026": {
+      "eras_applicants": 650,
+      "invited_to_interview": 163,
+      "interview_rate_pct": 25.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 650,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 25.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/7551dcf8-940b-53c4-6b40-7aa224d41d0b",
@@ -32533,7 +32973,18 @@
     ],
     "program_strengths": [
       "Direct Primary Care Hospital Medicine Lifestyle Medicine/Nutrition/Obesity Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 430,
+      "invited_to_interview": 148,
+      "interview_rate_pct": 34.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 430,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 34.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/5fa526f6-e2d4-c89f-f038-0e5828a85378",
@@ -33327,7 +33778,18 @@
     ],
     "program_strengths": [
       "Behavioral Medicine Hospital Medicine Low resourced/Marginalized Populations"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 383,
+      "invited_to_interview": 71,
+      "interview_rate_pct": 18.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 383,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 18.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/9957da8c-eb2a-9b2b-1d3d-4179e4030ab0",
@@ -34117,7 +34579,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Comprehensive Pregnancy Care Low resourced/Marginalized Populations"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 730,
+      "invited_to_interview": 139,
+      "interview_rate_pct": 19.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 730,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 19.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/84addfc4-4972-56a4-c736-a3897e43a3f1",
@@ -34912,7 +35385,18 @@
     "program_strengths": [
       "Health Equity Point of care ultrasound Osteopathic care"
     ],
-    "name": "Morehouse School of Medicine/Dominican Hospital Program"
+    "name": "Morehouse School of Medicine/Dominican Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 694,
+      "invited_to_interview": 208,
+      "interview_rate_pct": 30.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 694,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 30.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/80c3a4db-4665-7ebe-a311-c5207bf66882",
@@ -35720,7 +36204,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Care of children Health Equity"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 571,
+      "invited_to_interview": 83,
+      "interview_rate_pct": 14.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 571,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b814365f-c775-7334-ff8f-98f8a9c03e5a",
@@ -36521,7 +37016,18 @@
     ],
     "program_strengths": [
       "Addiction medicine Hospital Medicine Reproductive Care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 358,
+      "invited_to_interview": 126,
+      "interview_rate_pct": 35.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 358,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 35.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/93675c7a-d1ac-9b8a-5f47-9f4800bc3088",
@@ -37317,7 +37823,18 @@
     "program_strengths": [
       "Addiction medicine Comprehensive Pregnancy Care Osteopathic care"
     ],
-    "name": "Community Health Care Program"
+    "name": "Community Health Care Program",
+    "application_trends_2026": {
+      "eras_applicants": 426,
+      "invited_to_interview": 175,
+      "interview_rate_pct": 41.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 426,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 41.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/87a41951-51a0-80e0-a0c5-5a607adffa59",
@@ -38114,7 +38631,18 @@
     "program_strengths": [
       "Geriatrics Wellness/Well-being Research"
     ],
-    "name": "Wellstar Health System/Wellstar Kennestone Regional Medical Center Program"
+    "name": "Wellstar Health System/Wellstar Kennestone Regional Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 834,
+      "invited_to_interview": 131,
+      "interview_rate_pct": 15.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 834,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 15.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/09e2266b-02bc-ccb3-4aa2-c0c8ccdcd07f",
@@ -38900,7 +39428,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Univ of North Dakota School of Medicine and Health Sciences Program"
+    "name": "Univ of North Dakota School of Medicine and Health Sciences Program",
+    "application_trends_2026": {
+      "eras_applicants": 849,
+      "invited_to_interview": 72,
+      "interview_rate_pct": 8.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 849,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 8.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/4a4f1bc3-7228-67ff-9fe5-083e83c0b441",
@@ -39703,7 +40242,18 @@
     "program_strengths": [
       "Sports Medicine Lifestyle Medicine/Nutrition/Obesity Medicine Wellness/Well-being"
     ],
-    "name": "AdventHealth Florida (East Orlando) Program"
+    "name": "AdventHealth Florida (East Orlando) Program",
+    "application_trends_2026": {
+      "eras_applicants": 614,
+      "invited_to_interview": 107,
+      "interview_rate_pct": 17.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 614,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 17.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/63d41395-992d-6b84-c741-e023e4fcb0a2",
@@ -40495,7 +41045,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "New York Institute of Technology College of Osteopathic Medicine/Nassau University Medical Center Program"
+    "name": "New York Institute of Technology College of Osteopathic Medicine/Nassau University Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 1188,
+      "invited_to_interview": 145,
+      "interview_rate_pct": 12.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 1188,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 12.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/28146cb1-e4ed-efcc-e749-41b1cacfed1e",
@@ -41289,7 +41850,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Kettering Health Network/Indu and Raj Soin Medical Center Program"
+    "name": "Kettering Health Network/Indu and Raj Soin Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 400,
+      "invited_to_interview": 102,
+      "interview_rate_pct": 25.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 400,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 25.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b30bc7af-da8c-2931-2d8f-08716a5f56e4",
@@ -42083,7 +42655,18 @@
         "programOffering": "48%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 529,
+      "invited_to_interview": 95,
+      "interview_rate_pct": 18.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 529,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 18.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/4013d61b-1743-a7cf-d0f7-d7b29fa98b29",
@@ -42878,7 +43461,18 @@
     ],
     "program_strengths": [
       "Addiction medicine Reproductive Care LGBTQ+"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 400,
+      "invited_to_interview": 116,
+      "interview_rate_pct": 29.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 400,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 29.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/9658f87a-304f-ae5f-e601-8d84771ba7c8",
@@ -43673,7 +44267,18 @@
         "programOffering": "4%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 686,
+      "invited_to_interview": 98,
+      "interview_rate_pct": 14.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 686,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/67a4c274-7ca6-8f2e-620c-157f7560c56a",
@@ -44460,7 +45065,18 @@
     ],
     "program_strengths": [
       "Lifestyle Medicine/Nutrition/Obesity Medicine Point of care ultrasound Wellness/Well-being"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 268,
+      "invited_to_interview": 90,
+      "interview_rate_pct": 33.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 268,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 33.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/816d4688-fa7d-9450-9a05-d005c9cfcdbc",
@@ -45257,7 +45873,18 @@
     "program_strengths": [
       "Care of children Osteopathic care Hospital Medicine"
     ],
-    "name": "Atlantic Health Program"
+    "name": "Atlantic Health Program",
+    "application_trends_2026": {
+      "eras_applicants": 575,
+      "invited_to_interview": 124,
+      "interview_rate_pct": 21.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 575,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 21.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b734db87-af4a-26cc-90f4-8f5d8bdd9483",
@@ -46033,7 +46660,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "HealthPartners Institute/Amery (New Richmond) Program"
+    "name": "HealthPartners Institute/Amery (New Richmond) Program",
+    "application_trends_2026": {
+      "eras_applicants": 579,
+      "invited_to_interview": 49,
+      "interview_rate_pct": 8.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 579,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 8.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/ce4df23e-9fc5-de2d-0eb2-71febd21cad6",
@@ -46829,7 +47467,18 @@
     ],
     "program_strengths": [
       "Point of care ultrasound Hospital Medicine Academic Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1289,
+      "invited_to_interview": 133,
+      "interview_rate_pct": 10.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 1289,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 10.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/cb97ae32-5a15-3781-2c8f-3f43916869bf",
@@ -47627,7 +48276,18 @@
     "program_strengths": [
       "Direct Primary Care Leadership Low resourced/Marginalized Populations"
     ],
-    "name": "HCA Healthcare Riverside Program"
+    "name": "HCA Healthcare Riverside Program",
+    "application_trends_2026": {
+      "eras_applicants": 533,
+      "invited_to_interview": 143,
+      "interview_rate_pct": 26.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 533,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 26.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/4275bbc8-5151-1c32-0ade-97aebf19a87a",
@@ -48424,7 +49084,18 @@
     "program_strengths": [
       "Lifestyle Medicine/Nutrition/Obesity Medicine Sports Medicine Osteopathic care"
     ],
-    "name": "Prime Midwest GME Consortium/Resurrection Medical Center Program"
+    "name": "Prime Midwest GME Consortium/Resurrection Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 357,
+      "invited_to_interview": 93,
+      "interview_rate_pct": 26.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 357,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 26.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/0ed3b718-9df6-e25c-f2b4-187187279c1f",
@@ -49229,7 +49900,18 @@
     ],
     "program_strengths": [
       "Care of children Women's Health International Medicine/Global Health"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 292,
+      "invited_to_interview": 103,
+      "interview_rate_pct": 35.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 292,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 35.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/d2044699-5f14-cf87-ea8d-478c6ba63333",
@@ -50034,7 +50716,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Broward Health Program"
+    "name": "Broward Health Program",
+    "application_trends_2026": {
+      "eras_applicants": 999,
+      "invited_to_interview": 218,
+      "interview_rate_pct": 21.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 999,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 21.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/4aaf3937-2212-974d-57bb-80f23e5fd226",
@@ -50807,7 +51500,18 @@
     "program_strengths": [
       "Behavioral Medicine Hospital Medicine Low resourced/Marginalized Populations"
     ],
-    "name": "Willis Knighton Health Program"
+    "name": "Willis Knighton Health Program",
+    "application_trends_2026": {
+      "eras_applicants": 977,
+      "invited_to_interview": 31,
+      "interview_rate_pct": 3.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 977,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 3.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/75b56fdb-0a5f-1ff1-4b61-b005cf2ed406",
@@ -51596,7 +52300,18 @@
     "program_strengths": [
       "Osteopathic care Comprehensive Pregnancy Care Point of care ultrasound"
     ],
-    "name": "Prisma Health/University of South Carolina SOM Greenville (Seneca) Program"
+    "name": "Prisma Health/University of South Carolina SOM Greenville (Seneca) Program",
+    "application_trends_2026": {
+      "eras_applicants": 376,
+      "invited_to_interview": 129,
+      "interview_rate_pct": 34.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 376,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 34.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/4abe20b4-78a6-48d1-5589-c60df6cccc7d",
@@ -52411,7 +53126,18 @@
         "programOffering": "-",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1402,
+      "invited_to_interview": 127,
+      "interview_rate_pct": 9.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 1402,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 9.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/bdfba8ba-7cc8-ab4a-2a52-5ed88ea91cd3",
@@ -53209,7 +53935,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Marshall Community Health Consortium Program"
+    "name": "Marshall Community Health Consortium Program",
+    "application_trends_2026": {
+      "eras_applicants": 803,
+      "invited_to_interview": 68,
+      "interview_rate_pct": 8.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 803,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 8.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/4d6275f8-099a-c5dc-990d-62d36e329c1b",
@@ -54004,7 +54741,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Comprehensive Pregnancy Care Care of children"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 483,
+      "invited_to_interview": 118,
+      "interview_rate_pct": 24.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 483,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 24.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b5489487-84c5-b571-daf3-65812c3b8d5a",
@@ -54796,7 +55544,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "New York Medical College/Roxborough Memorial Hospital Program"
+    "name": "New York Medical College/Roxborough Memorial Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 766,
+      "invited_to_interview": 86,
+      "interview_rate_pct": 11.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 766,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 11.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/981eb5cb-bd9a-7130-227e-f1bd8a0e3ac2",
@@ -55595,7 +56354,18 @@
     "program_strengths": [
       "Wellness/Well-being Academic Medicine Sports Medicine"
     ],
-    "name": "Atrium Health Cabarrus Program"
+    "name": "Atrium Health Cabarrus Program",
+    "application_trends_2026": {
+      "eras_applicants": 422,
+      "invited_to_interview": 117,
+      "interview_rate_pct": 27.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 422,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/d3a830e9-5e5c-6adf-762e-bac3d8b9ad49",
@@ -56386,7 +57156,18 @@
     ],
     "program_strengths": [
       "Advanced procedural skills Hospital Medicine Comprehensive Pregnancy Care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 204,
+      "invited_to_interview": 69,
+      "interview_rate_pct": 33.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 204,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 33.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/ca05655b-4bc0-3d8d-c9a3-062ed933ef75",
@@ -57181,7 +57962,18 @@
     "program_strengths": [
       "Hospital Medicine Geriatrics Academic Medicine"
     ],
-    "name": "Sovah Health-Danville Program"
+    "name": "Sovah Health-Danville Program",
+    "application_trends_2026": {
+      "eras_applicants": 523,
+      "invited_to_interview": 99,
+      "interview_rate_pct": 18.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 523,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 18.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b6859f7f-4e1c-fd58-c0f4-fd05beef24c9",
@@ -57970,7 +58762,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 308,
+      "invited_to_interview": 84,
+      "interview_rate_pct": 27.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 308,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/79dceb53-37d7-30ce-5c6d-f0689de432d6",
@@ -58766,7 +59569,18 @@
     ],
     "program_strengths": [
       "Addiction medicine Point of care ultrasound Lifestyle Medicine/Nutrition/Obesity Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 462,
+      "invited_to_interview": 133,
+      "interview_rate_pct": 28.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 462,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 28.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/6125d131-bd0a-949e-90ba-c5946eb9c606",
@@ -59557,7 +60371,18 @@
     ],
     "program_strengths": [
       "Direct Primary Care Hospital Medicine Low resourced/Marginalized Populations"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1811,
+      "invited_to_interview": 108,
+      "interview_rate_pct": 6.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 1811,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 6.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/2f495c5a-9c80-2368-0676-543563b319fb",
@@ -60346,7 +61171,18 @@
     "program_strengths": [
       "Direct Primary Care Geriatrics Osteopathic care"
     ],
-    "name": "Still OPTI/Northeast Regional Medical Center Program"
+    "name": "Still OPTI/Northeast Regional Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 113,
+      "invited_to_interview": 38,
+      "interview_rate_pct": 33.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 113,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 33.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/87a93b50-6511-a50a-2a6a-4a180978e0b7",
@@ -61146,7 +61982,18 @@
     "program_strengths": [
       "Hospital Medicine Osteopathic care Health Systems Science/Practice Management"
     ],
-    "name": "Hackensack Meridian Health/Ocean University Medical Center Program"
+    "name": "Hackensack Meridian Health/Ocean University Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 926,
+      "invited_to_interview": 181,
+      "interview_rate_pct": 19.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 926,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 19.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/aae30662-0a93-aacb-2973-1703c063d468",
@@ -61937,7 +62784,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Puyallup Tribal Health Authority Program"
+    "name": "Puyallup Tribal Health Authority Program",
+    "application_trends_2026": {
+      "eras_applicants": 197,
+      "invited_to_interview": 107,
+      "interview_rate_pct": 54.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 197,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 54.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/f63c7f5d-f794-96d9-63a9-1b24207a5ef6",
@@ -62738,7 +63596,18 @@
     "program_strengths": [
       "Hospital Medicine Sports Medicine Women's Health"
     ],
-    "name": "Kirk Kerkorian School of Medicine at UNLV Program"
+    "name": "Kirk Kerkorian School of Medicine at UNLV Program",
+    "application_trends_2026": {
+      "eras_applicants": 288,
+      "invited_to_interview": 77,
+      "interview_rate_pct": 26.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 288,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 26.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/fb55c826-c41f-818d-1ec2-4a5dd8a43d82",
@@ -63540,7 +64409,18 @@
     ],
     "program_strengths": [
       "Sports Medicine Health Equity Lifestyle Medicine/Nutrition/Obesity Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 584,
+      "invited_to_interview": 202,
+      "interview_rate_pct": 34.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 584,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 34.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/278c3147-a372-8291-7dc2-0d0f2d7282fc",
@@ -64338,7 +65218,18 @@
     "program_strengths": [
       "Health Equity Women's Health Hospital Medicine"
     ],
-    "name": "DeTar Healthcare System Program"
+    "name": "DeTar Healthcare System Program",
+    "application_trends_2026": {
+      "eras_applicants": 729,
+      "invited_to_interview": 129,
+      "interview_rate_pct": 17.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 729,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 17.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/00b4468b-e61b-5e4a-3847-0a26c68d2b1c",
@@ -65137,7 +66028,18 @@
     "program_strengths": [
       "Women's Health Point of care ultrasound Hospital Medicine"
     ],
-    "name": "Cahaba Medical Care/University of Alabama Medical Center Program"
+    "name": "Cahaba Medical Care/University of Alabama Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 535,
+      "invited_to_interview": 156,
+      "interview_rate_pct": 29.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 535,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 29.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b19ed091-b9ab-d996-83d3-4ca9f8dc2e75",
@@ -65929,7 +66831,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Trios Health Program"
+    "name": "Trios Health Program",
+    "application_trends_2026": {
+      "eras_applicants": 243,
+      "invited_to_interview": 113,
+      "interview_rate_pct": 46.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 243,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 46.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/5c7be220-0d2c-c142-4101-240872268ab9",
@@ -66727,7 +67640,18 @@
     ],
     "program_strengths": [
       "Lifestyle Medicine/Nutrition/Obesity Medicine Women's Health Hospital Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 623,
+      "invited_to_interview": 165,
+      "interview_rate_pct": 26.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 623,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 26.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/51499fb1-c39b-e687-6825-10cddfc42890",
@@ -67519,7 +68443,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Jefferson Health Medical Education/Jefferson Einstein Montgomery Hospital Program"
+    "name": "Jefferson Health Medical Education/Jefferson Einstein Montgomery Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 1399,
+      "invited_to_interview": 122,
+      "interview_rate_pct": 8.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 1399,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 8.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c9bcbae0-b754-c54e-e456-b64a4ee65677",
@@ -68314,7 +69249,18 @@
     ],
     "program_strengths": [
       "Wellness/Well-being Clinical Informatics Hospital Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 196,
+      "invited_to_interview": 83,
+      "interview_rate_pct": 42.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 196,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 42.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/44c979ab-6934-c5ed-bb29-07b41f6a493b",
@@ -69094,7 +70040,18 @@
         "programOffering": "5%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 786,
+      "invited_to_interview": 79,
+      "interview_rate_pct": 10.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 786,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 10.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/d6e320e0-f0fe-54c1-6b3d-052da54f9570",
@@ -69893,7 +70850,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Mountain Area Health Education Center (Boone) Program"
+    "name": "Mountain Area Health Education Center (Boone) Program",
+    "application_trends_2026": {
+      "eras_applicants": 314,
+      "invited_to_interview": 119,
+      "interview_rate_pct": 37.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 314,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 37.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/ebbf9b1e-b150-f808-9fb7-433b28bba525",
@@ -70686,7 +71654,18 @@
     ],
     "program_strengths": [
       "Health Equity Wellness/Well-being Women's Health"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 554,
+      "invited_to_interview": 129,
+      "interview_rate_pct": 23.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 554,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 23.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/47d082b4-4074-a36a-df40-449a637140a0",
@@ -71483,7 +72462,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Kaiser Permanente Northern California (San Jose) Program"
+    "name": "Kaiser Permanente Northern California (San Jose) Program",
+    "application_trends_2026": {
+      "eras_applicants": 535,
+      "invited_to_interview": 110,
+      "interview_rate_pct": 20.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 535,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/151dc7e2-0f72-c11d-598b-be355afae8a3",
@@ -72279,7 +73269,18 @@
     "program_strengths": [
       "Lifestyle Medicine/Nutrition/Obesity Medicine Point of Care Ultrasound Women's Health"
     ],
-    "name": "UPMC Medical Education/Williamsport Hospital Program"
+    "name": "UPMC Medical Education/Williamsport Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 320,
+      "invited_to_interview": 132,
+      "interview_rate_pct": 41.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 320,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 41.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/87e699d9-b7a6-5f3b-a32d-6eb780800127",
@@ -73079,7 +74080,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Spokane Teaching Health Center/Sacred Heart Medical Center Program"
+    "name": "Spokane Teaching Health Center/Sacred Heart Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 288,
+      "invited_to_interview": 109,
+      "interview_rate_pct": 37.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 288,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 37.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/a6f67e7f-d75a-6e46-6f81-ce6ab56b653c",
@@ -73860,7 +74872,18 @@
     "program_strengths": [
       "Hospital Medicine Care of children Geriatrics"
     ],
-    "name": "Adventist Health Central California Network (Hanford) Program"
+    "name": "Adventist Health Central California Network (Hanford) Program",
+    "application_trends_2026": {
+      "eras_applicants": 729,
+      "invited_to_interview": 116,
+      "interview_rate_pct": 15.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 729,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 15.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/d42425db-a391-e1bc-8bf6-5c163a3a3481",
@@ -74607,7 +75630,18 @@
         "programOffering": "-",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 666,
+      "invited_to_interview": 71,
+      "interview_rate_pct": 10.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 666,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 10.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b8be1c6a-1ab8-d5e7-97ff-904369be759d",
@@ -75398,7 +76432,18 @@
     ],
     "program_strengths": [
       "Addiction medicine Academic Medicine Reproductive Care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 668,
+      "invited_to_interview": 168,
+      "interview_rate_pct": 25.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 668,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 25.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/3b21672e-526e-396b-8f7f-3e4c1d8d6078",
@@ -76179,7 +77224,18 @@
         "programOffering": "38%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 784,
+      "invited_to_interview": 65,
+      "interview_rate_pct": 8.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 784,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 8.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/d1c07075-9877-3396-c68a-ac1b57dc3481",
@@ -76980,7 +78036,18 @@
     "program_strengths": [
       "Sports Medicine Wellness/Well-being LGBTQ+"
     ],
-    "name": "Samaritan Health Services - Corvallis Program"
+    "name": "Samaritan Health Services - Corvallis Program",
+    "application_trends_2026": {
+      "eras_applicants": 479,
+      "invited_to_interview": 142,
+      "interview_rate_pct": 29.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 479,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 29.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/dc5d46a6-edbe-1633-6a3f-a39c746b4282",
@@ -77787,7 +78854,18 @@
     "program_strengths": [
       "Behavioral Medicine Comprehensive Pregnancy Care Low resourced/Marginalized Populations"
     ],
-    "name": "Waco Family Medicine - Institute Program"
+    "name": "Waco Family Medicine - Institute Program",
+    "application_trends_2026": {
+      "eras_applicants": 538,
+      "invited_to_interview": 154,
+      "interview_rate_pct": 28.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 538,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 28.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/29e70051-fb2a-87f1-c926-02bb0979a5c3",
@@ -78578,7 +79656,18 @@
         "programOffering": "6%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 470,
+      "invited_to_interview": 179,
+      "interview_rate_pct": 38.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 470,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 38.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/0c89e42f-3f3a-0580-c4c1-f7603ea746d7",
@@ -79375,7 +80464,18 @@
     ],
     "program_strengths": [
       "Lifestyle Medicine/Nutrition/Obesity Medicine Care of children Osteopathic care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 482,
+      "invited_to_interview": 177,
+      "interview_rate_pct": 36.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 482,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 36.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/a31466a2-8cb9-b549-6ffb-70b987ea79ba",
@@ -80163,7 +81263,18 @@
     ],
     "program_strengths": [
       "Other Health Equity Addiction medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 906,
+      "invited_to_interview": 64,
+      "interview_rate_pct": 7.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 906,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 7.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/0dd34ee7-9ad5-cfd0-4ce8-ab9911e320b5",
@@ -80958,7 +82069,18 @@
     "program_strengths": [
       "Comprehensive Pregnancy Care Osteopathic care Wellness/Well-being"
     ],
-    "name": "Trinity Health Muskegon Program"
+    "name": "Trinity Health Muskegon Program",
+    "application_trends_2026": {
+      "eras_applicants": 746,
+      "invited_to_interview": 87,
+      "interview_rate_pct": 11.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 746,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 11.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/281a6fca-3742-0e28-76bb-913bf9bb3ea9",
@@ -81750,7 +82872,18 @@
         "programOffering": "18%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 558,
+      "invited_to_interview": 122,
+      "interview_rate_pct": 21.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 558,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 21.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/5e9ea02d-4448-6317-ca37-6ce96197db61",
@@ -82534,7 +83667,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Comprehensive Pregnancy Care Care of children"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 279,
+      "invited_to_interview": 115,
+      "interview_rate_pct": 41.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 279,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 41.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/a4c3ab28-7726-80f3-4dd1-81f729164a6e",
@@ -83336,7 +84480,18 @@
     ],
     "program_strengths": [
       "Advanced procedural skills Hospital Medicine Low resourced/Marginalized Populations"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 615,
+      "invited_to_interview": 113,
+      "interview_rate_pct": 18.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 615,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 18.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/e9a21822-ec80-7eb3-d8b7-f4877f05bbc6",
@@ -84131,7 +85286,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 206,
+      "invited_to_interview": 57,
+      "interview_rate_pct": 27.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 206,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c9e03148-6489-acf3-a09a-365eb96a0c1b",
@@ -84935,7 +86101,18 @@
     ],
     "program_strengths": [
       "Behavioral Medicine Lifestyle Medicine/Nutrition/Obesity Medicine Point of care ultrasound"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 546,
+      "invited_to_interview": 112,
+      "interview_rate_pct": 20.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 546,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/76d7b1af-949b-3d09-520a-e23b4b33be65",
@@ -85735,7 +86912,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Kaweah Delta Health Care District (KDHCD) Program"
+    "name": "Kaweah Delta Health Care District (KDHCD) Program",
+    "application_trends_2026": {
+      "eras_applicants": 653,
+      "invited_to_interview": 185,
+      "interview_rate_pct": 28.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 653,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 28.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/435bffcf-26e8-d303-336e-ac0006ef0a4d",
@@ -86530,7 +87718,18 @@
     ],
     "program_strengths": [
       "Advanced procedural skills Hospital Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 616,
+      "invited_to_interview": 91,
+      "interview_rate_pct": 14.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 616,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/3b3537a3-c1b2-94ca-744b-dee639c05977",
@@ -87312,7 +88511,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Wright Center for Graduate Medical Education Program"
+    "name": "Wright Center for Graduate Medical Education Program",
+    "application_trends_2026": {
+      "eras_applicants": 1441,
+      "invited_to_interview": 95,
+      "interview_rate_pct": 6.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 1441,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 6.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/f1522aec-8281-de1a-c035-aec67f53f11c",
@@ -88100,7 +89310,18 @@
     ],
     "program_strengths": [
       "Academic Medicine Care of children Other"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1916,
+      "invited_to_interview": 74,
+      "interview_rate_pct": 3.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 1916,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 3.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/aaf3fd83-f16e-d8a9-96c3-0702d4b19fe7",
@@ -88896,7 +90117,18 @@
     "program_strengths": [
       "Low resourced/Marginalized Populations Point of care ultrasound Sports Medicine"
     ],
-    "name": "Prisma Health/University of South Carolina SOM Columbia (Columbia) Program"
+    "name": "Prisma Health/University of South Carolina SOM Columbia (Columbia) Program",
+    "application_trends_2026": {
+      "eras_applicants": 344,
+      "invited_to_interview": 163,
+      "interview_rate_pct": 47.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 344,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 47.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/e5291975-dab8-f8d5-aa25-7cd0c7cd8c7d",
@@ -89683,7 +90915,18 @@
     ],
     "program_strengths": [
       "Academic Medicine Behavioral Medicine Lifestyle Medicine/Nutrition/Obesity Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 422,
+      "invited_to_interview": 129,
+      "interview_rate_pct": 30.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 422,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 30.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/8636d199-4959-51c2-86ae-af1a63f09be9",
@@ -90465,7 +91708,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 331,
+      "invited_to_interview": 58,
+      "interview_rate_pct": 17.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 331,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 17.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b5765b88-3d66-2c15-500a-b458edbd55ae",
@@ -91254,7 +92508,18 @@
     "program_strengths": [
       "Behavioral Medicine Comprehensive Pregnancy Care Sports Medicine"
     ],
-    "name": "Summa Health System/NEOMED Program"
+    "name": "Summa Health System/NEOMED Program",
+    "application_trends_2026": {
+      "eras_applicants": 970,
+      "invited_to_interview": 108,
+      "interview_rate_pct": 11.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 970,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 11.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c36dec66-01e8-a6c8-ad19-5de3ba27b667",
@@ -92048,7 +93313,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "HCA Florida Healthcare/USF Morsani College of Medicine GME - Tampa South/St Petersburg Hospital Program"
+    "name": "HCA Florida Healthcare/USF Morsani College of Medicine GME - Tampa South/St Petersburg Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 639,
+      "invited_to_interview": 132,
+      "interview_rate_pct": 20.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 639,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/8413f491-6f0c-b6f8-3380-bee521ce4120",
@@ -92839,7 +94115,18 @@
     "program_strengths": [
       "Addiction medicine LGBTQ+ Lifestyle Medicine/Nutrition/Obesity Medicine"
     ],
-    "name": "WiNC (Wisconsin Northern & Central) GME Consortium/MCW-Prevea (Green Bay) Program"
+    "name": "WiNC (Wisconsin Northern & Central) GME Consortium/MCW-Prevea (Green Bay) Program",
+    "application_trends_2026": {
+      "eras_applicants": 477,
+      "invited_to_interview": 138,
+      "interview_rate_pct": 28.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 477,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 28.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/e46d9ccb-e1c8-6094-07d1-4d6d83dce0ed",
@@ -93614,7 +94901,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 314,
+      "invited_to_interview": 54,
+      "interview_rate_pct": 17.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 314,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 17.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/f02c3b67-e3aa-9bd5-d989-d635f7745ea5",
@@ -94399,7 +95697,18 @@
     ],
     "program_strengths": [
       "Behavioral Medicine Wellness/Well-being Geriatrics"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 353,
+      "invited_to_interview": 78,
+      "interview_rate_pct": 22.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 353,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 22.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/1d6c1bad-2c7c-e5f4-60b5-20a4578b2fe0",
@@ -95194,7 +96503,18 @@
     ],
     "program_strengths": [
       "Women's Health Low resourced/Marginalized Populations Leadership"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 466,
+      "invited_to_interview": 125,
+      "interview_rate_pct": 26.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 466,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 26.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/d0955fff-5dd2-72ec-43d4-7c3e43e5c29e",
@@ -95990,7 +97310,18 @@
     ],
     "program_strengths": [
       "Direct Primary Care Hospital Medicine Health Equity"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 311,
+      "invited_to_interview": 115,
+      "interview_rate_pct": 37.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 311,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 37.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/10dead96-b091-ba77-8579-8dfec73ea623",
@@ -96782,7 +98113,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "HCA Healthcare Kansas City/Lee's Summit Medical Center Program"
+    "name": "HCA Healthcare Kansas City/Lee's Summit Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 714,
+      "invited_to_interview": 90,
+      "interview_rate_pct": 12.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 714,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 12.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/743c0507-28b6-24df-97b1-5dbf153f44f5",
@@ -97577,7 +98919,18 @@
         "programOffering": "12%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 365,
+      "invited_to_interview": 133,
+      "interview_rate_pct": 36.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 365,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 36.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/1cddb034-a6c7-6aab-0556-712c932a3917",
@@ -98370,7 +99723,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "AdventHealth Florida (Sebring) Program"
+    "name": "AdventHealth Florida (Sebring) Program",
+    "application_trends_2026": {
+      "eras_applicants": 1908,
+      "invited_to_interview": 163,
+      "interview_rate_pct": 8.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 1908,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 8.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/4efdc717-af0f-121d-c0b4-4b8f32e74acc",
@@ -99152,7 +100516,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "McLaren Health Care Corporation (Port Huron) Program"
+    "name": "McLaren Health Care Corporation (Port Huron) Program",
+    "application_trends_2026": {
+      "eras_applicants": 513,
+      "invited_to_interview": 63,
+      "interview_rate_pct": 12.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 513,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 12.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/55e923e1-667d-3354-cfb8-335433ac574b",
@@ -99937,7 +101312,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Jefferson Health Medical Education/Jefferson Einstein Philadelphia Hospital Program"
+    "name": "Jefferson Health Medical Education/Jefferson Einstein Philadelphia Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 1740,
+      "invited_to_interview": 150,
+      "interview_rate_pct": 8.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 1740,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 8.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/789d0064-47d5-d9c5-b420-01d07e84bbd2",
@@ -100736,7 +102122,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "UPMC Medical Education/McKeesport Hospital Program"
+    "name": "UPMC Medical Education/McKeesport Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 1451,
+      "invited_to_interview": 183,
+      "interview_rate_pct": 12.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 1451,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 12.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/a120c330-9382-e7c9-270e-f51e97887bcc",
@@ -101537,7 +102934,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1072,
+      "invited_to_interview": 128,
+      "interview_rate_pct": 11.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 1072,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 11.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c24f476e-1d82-ace9-f2c6-f3e427f5fd8c",
@@ -102328,7 +103736,18 @@
     "program_strengths": [
       "Sports Medicine Hospital Medicine Academic Medicine"
     ],
-    "name": "Mayo Clinic College of Medicine and Science (Jacksonville) Program"
+    "name": "Mayo Clinic College of Medicine and Science (Jacksonville) Program",
+    "application_trends_2026": {
+      "eras_applicants": 972,
+      "invited_to_interview": 138,
+      "interview_rate_pct": 14.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 972,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c4ea6f08-93a2-1c8e-0653-c5e9e892385a",
@@ -103132,7 +104551,18 @@
     ],
     "program_strengths": [
       "Geriatrics Wellness/Well-being Women's Health"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 330,
+      "invited_to_interview": 123,
+      "interview_rate_pct": 37.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 330,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 37.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/323efca9-49d2-a089-e9a9-c2f22040eac2",
@@ -103933,7 +105363,18 @@
     "program_strengths": [
       "Geriatrics Academic Medicine Comprehensive Pregnancy Care"
     ],
-    "name": "Zucker School of Medicine at Hofstra/Northwell at Glen Cove Hospital Program"
+    "name": "Zucker School of Medicine at Hofstra/Northwell at Glen Cove Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 895,
+      "invited_to_interview": 105,
+      "interview_rate_pct": 11.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 895,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 11.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/a7ade574-6dab-4265-7ae0-28bb4cf88626",
@@ -104721,7 +106162,18 @@
     ],
     "program_strengths": [
       "Care of children Hospital Medicine Point of care ultrasound"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 538,
+      "invited_to_interview": 117,
+      "interview_rate_pct": 21.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 538,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 21.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/6e16fc94-e210-59bd-7305-a0238a3837eb",
@@ -105530,7 +106982,18 @@
         "programOffering": "14%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 335,
+      "invited_to_interview": 132,
+      "interview_rate_pct": 39.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 335,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 39.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c222cc69-20b5-77f1-ff42-f63fcc3017e6",
@@ -106314,7 +107777,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Low resourced/Marginalized Populations Point of care ultrasound"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 397,
+      "invited_to_interview": 58,
+      "interview_rate_pct": 14.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 397,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b37808f1-e569-92fa-181f-aea546c08065",
@@ -107109,7 +108583,18 @@
     ],
     "program_strengths": [
       "Leadership Sports Medicine Women's Health"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 403,
+      "invited_to_interview": 174,
+      "interview_rate_pct": 43.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 403,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 43.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/172734cb-d19a-3573-8522-32c0289d3c3a",
@@ -107912,7 +109397,18 @@
     ],
     "program_strengths": [
       "Point of care ultrasound Sports Medicine Osteopathic care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 524,
+      "invited_to_interview": 125,
+      "interview_rate_pct": 23.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 524,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 23.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/1b04c580-002b-e528-4871-31585168a997",
@@ -108699,7 +110195,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Center for Family Medicine (Sioux Falls) Program"
+    "name": "Center for Family Medicine (Sioux Falls) Program",
+    "application_trends_2026": {
+      "eras_applicants": 285,
+      "invited_to_interview": 91,
+      "interview_rate_pct": 31.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 285,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 31.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/f3522c4b-9fce-819f-9c2d-5f30b0025bfd",
@@ -109501,7 +111008,18 @@
     "program_strengths": [
       "Comprehensive Pregnancy Care Hospital Medicine Academic Medicine"
     ],
-    "name": "Corewell Health Beaumont (Troy) Program"
+    "name": "Corewell Health Beaumont (Troy) Program",
+    "application_trends_2026": {
+      "eras_applicants": 472,
+      "invited_to_interview": 100,
+      "interview_rate_pct": 21.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 472,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 21.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/fcb10b81-51a0-80ae-4090-504187e54b17",
@@ -110303,7 +111821,18 @@
     ],
     "program_strengths": [
       "Geriatrics Hospital Medicine Care of children"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 240,
+      "invited_to_interview": 71,
+      "interview_rate_pct": 29.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 240,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 29.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/56d2fe00-45d6-113e-80b8-b25381e171f0",
@@ -111110,7 +112639,18 @@
     ],
     "program_strengths": [
       "Care of children Hospital Medicine Low resourced/Marginalized Populations"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 418,
+      "invited_to_interview": 122,
+      "interview_rate_pct": 29.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 418,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 29.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/2c697f77-0bad-0932-be3c-6b47f55aa107",
@@ -111868,7 +113408,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Wayne Memorial Community Health Centers Program"
+    "name": "Wayne Memorial Community Health Centers Program",
+    "application_trends_2026": {
+      "eras_applicants": 1326,
+      "invited_to_interview": 72,
+      "interview_rate_pct": 5.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 1326,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 5.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/a209e8a1-f250-ca19-3322-6fd83d968a34",
@@ -112647,7 +114198,18 @@
     ],
     "program_strengths": [
       "Care of children Geriatrics Osteopathic care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 256,
+      "invited_to_interview": 65,
+      "interview_rate_pct": 25.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 256,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 25.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/f2fdd55a-c3d0-d929-40fe-b022a4a30f6b",
@@ -113444,7 +115006,18 @@
         "programOffering": "33%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 468,
+      "invited_to_interview": 97,
+      "interview_rate_pct": 20.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 468,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/e4dd2d1d-168e-f2fa-8300-580598493fbf",
@@ -114241,7 +115814,18 @@
     "program_strengths": [
       "Addiction medicine Women's Health Hospital Medicine"
     ],
-    "name": "Adventist Health Glendale Program"
+    "name": "Adventist Health Glendale Program",
+    "application_trends_2026": {
+      "eras_applicants": 570,
+      "invited_to_interview": 152,
+      "interview_rate_pct": 26.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 570,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 26.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/7f5aa712-53fe-9575-395a-bac5579b1518",
@@ -115044,7 +116628,18 @@
         "programOffering": "7%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 181,
+      "invited_to_interview": 91,
+      "interview_rate_pct": 50.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 181,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 50.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/94a29502-0e7e-8bff-b849-2ba32d8c07f6",
@@ -115840,7 +117435,18 @@
     "program_strengths": [
       "Geriatrics Sports Medicine Reproductive Care"
     ],
-    "name": "Rutgers Health/Robert Wood Johnson Medical School Program"
+    "name": "Rutgers Health/Robert Wood Johnson Medical School Program",
+    "application_trends_2026": {
+      "eras_applicants": 536,
+      "invited_to_interview": 61,
+      "interview_rate_pct": 11.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 536,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 11.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/0ece70c3-c3b9-4466-2d6e-6e26dcd27b36",
@@ -116643,7 +118249,18 @@
     ],
     "program_strengths": [
       "Health Equity Hospital Medicine Behavioral Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 549,
+      "invited_to_interview": 106,
+      "interview_rate_pct": 19.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 549,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 19.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/8311415d-b5aa-f6a9-4d16-dc581f072c45",
@@ -117437,7 +119054,18 @@
         "programOffering": "4%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 421,
+      "invited_to_interview": 122,
+      "interview_rate_pct": 29.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 421,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 29.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/bb645c8c-07ba-7d30-ad99-64fafbd499fc",
@@ -118231,7 +119859,18 @@
     "program_strengths": [
       "Behavioral Medicine Lifestyle Medicine/Nutrition/Obesity Medicine Point of care ultrasound"
     ],
-    "name": "Ochsner Clinic Foundation Program"
+    "name": "Ochsner Clinic Foundation Program",
+    "application_trends_2026": {
+      "eras_applicants": 451,
+      "invited_to_interview": 101,
+      "interview_rate_pct": 22.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 451,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 22.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/367d8336-4551-2e82-11bb-ebcd5212d37f",
@@ -119034,7 +120673,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Health Systems Science/Practice Management Wellness/Well-being"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 617,
+      "invited_to_interview": 131,
+      "interview_rate_pct": 21.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 617,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 21.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/374fccb1-7dde-b1fd-4de9-58ee287920a7",
@@ -119813,7 +121463,18 @@
     ],
     "program_strengths": [
       "Advanced procedural skills Hospital Medicine Low resourced/Marginalized Populations"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1011,
+      "invited_to_interview": 72,
+      "interview_rate_pct": 7.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 1011,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 7.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b57eafde-c78c-fa27-79dd-9ba9d3c5282e",
@@ -120598,7 +122259,18 @@
     "program_strengths": [
       "Hospital Medicine Point of care ultrasound Preventative Medicine and/or Occupational Medicine"
     ],
-    "name": "Samaritan Health Services - Corvallis (Newport) Program"
+    "name": "Samaritan Health Services - Corvallis (Newport) Program",
+    "application_trends_2026": {
+      "eras_applicants": 325,
+      "invited_to_interview": 72,
+      "interview_rate_pct": 22.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 325,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 22.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/0f3eeead-f2ff-ab78-0b7f-04fcd7ff3e7d",
@@ -121386,7 +123058,18 @@
     "program_strengths": [
       "Leadership Comprehensive Pregnancy Care Behavioral Medicine"
     ],
-    "name": "Mayo Clinic College of Medicine and Science (Eau Claire) Program"
+    "name": "Mayo Clinic College of Medicine and Science (Eau Claire) Program",
+    "application_trends_2026": {
+      "eras_applicants": 495,
+      "invited_to_interview": 100,
+      "interview_rate_pct": 20.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 495,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/39f8aeec-cfc5-bdd6-e0be-4c3a0a58be1b",
@@ -122187,7 +123870,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Integrative medicine Addiction medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 691,
+      "invited_to_interview": 159,
+      "interview_rate_pct": 23.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 691,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 23.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/91b46247-3bb7-db52-7f64-1b17a1ad6eaa",
@@ -122983,7 +124677,18 @@
     ],
     "program_strengths": [
       "Low resourced/Marginalized Populations Osteopathic care Women's Health"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 975,
+      "invited_to_interview": 117,
+      "interview_rate_pct": 12.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 975,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 12.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/859bc43e-6729-6b79-d259-9a69d9c35b37",
@@ -123780,7 +125485,18 @@
     "program_strengths": [
       "Academic Medicine Hospital Medicine Low resourced/Marginalized Populations"
     ],
-    "name": "MaineHealth Program"
+    "name": "MaineHealth Program",
+    "application_trends_2026": {
+      "eras_applicants": 350,
+      "invited_to_interview": 103,
+      "interview_rate_pct": 29.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 350,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 29.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/2d785c0a-a931-928b-e0f1-253cbb8ca795",
@@ -124579,7 +126295,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Novant Health Program"
+    "name": "Novant Health Program",
+    "application_trends_2026": {
+      "eras_applicants": 304,
+      "invited_to_interview": 111,
+      "interview_rate_pct": 36.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 304,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 36.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c93f581b-e0d8-24fa-a4da-cff7cea88b4c",
@@ -125380,7 +127107,18 @@
     ],
     "program_strengths": [
       "LGBTQ+ Hospital Medicine Reproductive Care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 528,
+      "invited_to_interview": 189,
+      "interview_rate_pct": 35.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 528,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 35.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/7f40ceb2-9dbb-45dd-709a-8cadc3114c73",
@@ -126162,7 +127900,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 105,
+      "invited_to_interview": 32,
+      "interview_rate_pct": 30.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 105,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 30.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/ff13ddf5-cc59-12cc-2730-b30a02f63be6",
@@ -126966,7 +128715,18 @@
     "program_strengths": [
       "Hospital Medicine Health Equity Reproductive Care"
     ],
-    "name": "OhioHealth/Grant Medical Center Program"
+    "name": "OhioHealth/Grant Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 445,
+      "invited_to_interview": 182,
+      "interview_rate_pct": 40.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 445,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 40.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/38068343-ef53-a42d-06c9-972028518588",
@@ -127748,7 +129508,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Humboldt Park Health Program"
+    "name": "Humboldt Park Health Program",
+    "application_trends_2026": {
+      "eras_applicants": 1964,
+      "invited_to_interview": 69,
+      "interview_rate_pct": 3.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 1964,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 3.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/33cd7d79-6e81-be52-4ca2-2556f02ef2d7",
@@ -128530,7 +130301,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 459,
+      "invited_to_interview": 67,
+      "interview_rate_pct": 14.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 459,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/e4c4a55e-c2df-d9af-fc24-6f2235bf6d6e",
@@ -129318,7 +131100,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "AdventHealth Florida (Ocala) Program"
+    "name": "AdventHealth Florida (Ocala) Program",
+    "application_trends_2026": {
+      "eras_applicants": 2295,
+      "invited_to_interview": 122,
+      "interview_rate_pct": 5.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 2295,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 5.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/d0bfd973-f351-5a50-9d0a-4f67f282b8c3",
@@ -130105,7 +131898,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Louisiana State University (Shreveport)/Rapides Regional Medical Center Program"
+    "name": "Louisiana State University (Shreveport)/Rapides Regional Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 934,
+      "invited_to_interview": 71,
+      "interview_rate_pct": 7.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 934,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 7.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/22bf24a1-defb-1c80-53f2-7bcfe67d1f52",
@@ -130890,7 +132694,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Mississippi Medical Education and Research Consortium Program"
+    "name": "Mississippi Medical Education and Research Consortium Program",
+    "application_trends_2026": {
+      "eras_applicants": 1532,
+      "invited_to_interview": 142,
+      "interview_rate_pct": 9.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 1532,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 9.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/50d5ae55-07f8-b546-1f88-c8f5a18339d7",
@@ -131680,7 +133495,18 @@
     ],
     "program_strengths": [
       "Behavioral Medicine Academic Medicine Health Equity"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 612,
+      "invited_to_interview": 85,
+      "interview_rate_pct": 13.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 612,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 13.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/233db194-0b1e-08ac-a240-b378452a4bdc",
@@ -132484,7 +134310,18 @@
     "program_strengths": [
       "Addiction medicine Direct Primary Care Low resourced/Marginalized Populations"
     ],
-    "name": "Institute for Family Health (Mid-Hudson) Program"
+    "name": "Institute for Family Health (Mid-Hudson) Program",
+    "application_trends_2026": {
+      "eras_applicants": 1469,
+      "invited_to_interview": 185,
+      "interview_rate_pct": 12.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 1469,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 12.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/be6320e0-d7ed-4e7a-1d21-a48b5c8eeb64",
@@ -133272,7 +135109,18 @@
     ],
     "program_strengths": [
       "Preventative Medicine and/or Occupational Medicine Wellness/Well-being Direct Primary Care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1777,
+      "invited_to_interview": 91,
+      "interview_rate_pct": 5.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 1777,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 5.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/bc00ba29-0b7c-0a80-5821-49e1e57af94a",
@@ -134074,7 +135922,18 @@
     "program_strengths": [
       "Low resourced/Marginalized Populations Addiction medicine Hospital Medicine"
     ],
-    "name": "UPMC Medical Education/St Margaret Hospital Program"
+    "name": "UPMC Medical Education/St Margaret Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 594,
+      "invited_to_interview": 206,
+      "interview_rate_pct": 34.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 594,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 34.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/edbe03c1-a2fe-c9ac-266c-62ae2b6f6450",
@@ -134822,7 +136681,18 @@
         "programOffering": "-",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 471,
+      "invited_to_interview": 131,
+      "interview_rate_pct": 27.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 471,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/d44efc1b-d4a1-c393-ff18-8ec74c59ceaa",
@@ -135622,7 +137492,18 @@
         "programOffering": "4%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 655,
+      "invited_to_interview": 189,
+      "interview_rate_pct": 28.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 655,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 28.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/9330a64d-dd5a-46f1-cc0a-021205fb5f48",
@@ -136407,7 +138288,18 @@
     ],
     "program_strengths": [
       "Sports Medicine Wellness/Well-being Geriatrics"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 390,
+      "invited_to_interview": 85,
+      "interview_rate_pct": 21.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 390,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 21.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/0975f9c1-a6f2-433d-eaa2-08c2c4a3eab6",
@@ -137205,7 +139097,18 @@
         "programOffering": "17%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 721,
+      "invited_to_interview": 200,
+      "interview_rate_pct": 27.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 721,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/5dd19bf2-239a-c368-151c-cf420d65f183",
@@ -138002,7 +139905,18 @@
     ],
     "program_strengths": [
       "Sports Medicine Hospital Medicine Osteopathic care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 520,
+      "invited_to_interview": 172,
+      "interview_rate_pct": 33.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 520,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 33.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/50306566-58ad-85b5-f762-b80eae7f703b",
@@ -138789,7 +140703,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Sutter Health/Sutter Santa Rosa Regional Hospital Program"
+    "name": "Sutter Health/Sutter Santa Rosa Regional Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 527,
+      "invited_to_interview": 144,
+      "interview_rate_pct": 27.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 527,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c1a6406b-31b5-d24f-4ce5-7eb776b8c08b",
@@ -139581,7 +141506,18 @@
         "programOffering": "39%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 629,
+      "invited_to_interview": 137,
+      "interview_rate_pct": 21.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 629,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 21.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/2696ec79-e3bd-44b6-3e2f-63a529ec97c8",
@@ -140375,7 +142311,18 @@
     ],
     "program_strengths": [
       "Behavioral Medicine Osteopathic care Sports Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1214,
+      "invited_to_interview": 136,
+      "interview_rate_pct": 11.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 1214,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 11.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/9024d652-aab8-4ac8-8134-e5f8984b28d2",
@@ -141173,7 +143120,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Behavioral Medicine Health Systems Science/Practice Management"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 338,
+      "invited_to_interview": 114,
+      "interview_rate_pct": 33.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 338,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 33.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/4d351857-f7df-1b89-22f3-e293419ca930",
@@ -141970,7 +143928,18 @@
     ],
     "program_strengths": [
       "Hospice and Palliative Care Hospital Medicine Sports Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 649,
+      "invited_to_interview": 153,
+      "interview_rate_pct": 23.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 649,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 23.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/ecb293eb-b75c-f9d8-00e7-5dc4d9127c16",
@@ -142767,7 +144736,18 @@
     "program_strengths": [
       "Leadership Hospital Medicine Health Equity"
     ],
-    "name": "HonorHealth/Scottsdale Osborn Medical Center Program"
+    "name": "HonorHealth/Scottsdale Osborn Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 496,
+      "invited_to_interview": 166,
+      "interview_rate_pct": 33.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 496,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 33.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/e430b429-a93a-1e0e-5937-d2b1c4b53791",
@@ -143563,7 +145543,18 @@
     "program_strengths": [
       "Hospital Medicine Health Equity Care of children"
     ],
-    "name": "Corewell Health (Wayne) Program"
+    "name": "Corewell Health (Wayne) Program",
+    "application_trends_2026": {
+      "eras_applicants": 340,
+      "invited_to_interview": 98,
+      "interview_rate_pct": 28.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 340,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 28.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/abd2733f-f6ec-052b-4bca-ca55ae03120c",
@@ -144331,7 +146322,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Inspira Health Network/Inspira Medical Center Vineland Program"
+    "name": "Inspira Health Network/Inspira Medical Center Vineland Program",
+    "application_trends_2026": {
+      "eras_applicants": 586,
+      "invited_to_interview": 79,
+      "interview_rate_pct": 13.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 586,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 13.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b794e511-a2d9-b582-6638-9ab249bf6827",
@@ -145118,7 +147120,18 @@
         "programOffering": "10%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 803,
+      "invited_to_interview": 116,
+      "interview_rate_pct": 14.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 803,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/7c1115c4-aa2a-964e-a4f0-6f11dd5a18c9",
@@ -145915,7 +147928,18 @@
     "program_strengths": [
       "Hospital Medicine Comprehensive Pregnancy Care LGBTQ+"
     ],
-    "name": "Valley Consortium for Medical Education Family Medicine Program"
+    "name": "Valley Consortium for Medical Education Family Medicine Program",
+    "application_trends_2026": {
+      "eras_applicants": 550,
+      "invited_to_interview": 146,
+      "interview_rate_pct": 26.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 550,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 26.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/ab863a05-8b01-42c6-2770-be513e751f90",
@@ -146706,7 +148730,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Prime West Consortium/Chino Valley Medical Center Program"
+    "name": "Prime West Consortium/Chino Valley Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 1409,
+      "invited_to_interview": 117,
+      "interview_rate_pct": 8.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 1409,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 8.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/112470df-6bdc-857c-967e-35411baf009c",
@@ -147493,7 +149528,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Jessie Trice Community Health System, Inc. Program"
+    "name": "Jessie Trice Community Health System, Inc. Program",
+    "application_trends_2026": {
+      "eras_applicants": 686,
+      "invited_to_interview": 72,
+      "interview_rate_pct": 10.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 686,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 10.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/dce7fa38-e4dc-87f3-52d8-9bd000a15b9a",
@@ -148296,7 +150342,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Care of children Health Equity"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 499,
+      "invited_to_interview": 181,
+      "interview_rate_pct": 36.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 499,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 36.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/0477397e-4d32-3c70-5803-1a0145433ef0",
@@ -149084,7 +151141,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Spokane Teaching Health Center Rural Program"
+    "name": "Spokane Teaching Health Center Rural Program",
+    "application_trends_2026": {
+      "eras_applicants": 201,
+      "invited_to_interview": 47,
+      "interview_rate_pct": 23.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 201,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 23.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/1952f570-0f6b-35fe-0416-a4767cb60b5e",
@@ -149879,7 +151947,18 @@
     "program_strengths": [
       "Academic Medicine Sports Medicine Direct Primary Care"
     ],
-    "name": "Louisiana State University (Shreveport)/Monroe Program"
+    "name": "Louisiana State University (Shreveport)/Monroe Program",
+    "application_trends_2026": {
+      "eras_applicants": 2150,
+      "invited_to_interview": 143,
+      "interview_rate_pct": 6.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 2150,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 6.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/7b42420d-9f2e-f8f4-b186-e7500ab5a223",
@@ -150665,7 +152744,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Baptist Outreach Services (Montgomery) Program"
+    "name": "Baptist Outreach Services (Montgomery) Program",
+    "application_trends_2026": {
+      "eras_applicants": 1971,
+      "invited_to_interview": 92,
+      "interview_rate_pct": 4.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 1971,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 4.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/ba6331c0-0959-ca1e-a647-d83972baa40b",
@@ -151461,7 +153551,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Main Line Health System/Bryn Mawr Hospital Program"
+    "name": "Main Line Health System/Bryn Mawr Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 434,
+      "invited_to_interview": 99,
+      "interview_rate_pct": 22.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 434,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 22.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/016e2989-865c-045d-8deb-81ba5c2c8d60",
@@ -152256,7 +154357,18 @@
         "programOffering": "-",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 265,
+      "invited_to_interview": 86,
+      "interview_rate_pct": 32.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 265,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 32.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/0614c26b-e9ec-4307-3899-5c675be199c9",
@@ -153054,7 +155166,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Osteopathic care Preventative Medicine and/or Occupational Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 329,
+      "invited_to_interview": 163,
+      "interview_rate_pct": 49.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 329,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 49.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c8e95c24-fc05-5e62-03cf-91f0275389a1",
@@ -153852,7 +155975,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Value-based care Direct Primary Care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 710,
+      "invited_to_interview": 197,
+      "interview_rate_pct": 27.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 710,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/70732307-8fa3-c982-9db4-7a0b93cbd2bb",
@@ -154628,7 +156762,14 @@
     ],
     "program_strengths": [
       "Hospital Medicine Ultrasound Advanced Procedural Skills"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 164
+    },
+    "selectivity_2026": {
+      "program_applicants": 164,
+      "avg_specialty_applicants": 663
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/13d92f36-6abf-6cc5-dc5d-d8ff3668ed16",
@@ -155416,7 +157557,18 @@
         "programOffering": "6%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 620,
+      "invited_to_interview": 129,
+      "interview_rate_pct": 20.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 620,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/bea30299-c85d-028f-ba58-39d739045fc0",
@@ -156186,7 +158338,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "CoxHealth Program"
+    "name": "CoxHealth Program",
+    "application_trends_2026": {
+      "eras_applicants": 175,
+      "invited_to_interview": 23,
+      "interview_rate_pct": 13.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 175,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 13.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/0760d317-2081-130b-4830-f3328ead8742",
@@ -156983,7 +159146,18 @@
     ],
     "program_strengths": [
       "Health Policy and Advocacy Health Equity Academic Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 538,
+      "invited_to_interview": 148,
+      "interview_rate_pct": 27.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 538,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/a1347505-d83d-c20f-452e-57ade6f4709a",
@@ -157788,7 +159962,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Utah HealthCare Institute/St Mark's Program"
+    "name": "Utah HealthCare Institute/St Mark's Program",
+    "application_trends_2026": {
+      "eras_applicants": 280,
+      "invited_to_interview": 60,
+      "interview_rate_pct": 21.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 280,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 21.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/f3c25e98-d1a1-fee4-e3a7-c09c20856702",
@@ -158581,7 +160766,18 @@
         "alignmentStatus": 0
       }
     ],
-    "city": "JONESBORO"
+    "city": "JONESBORO",
+    "application_trends_2026": {
+      "eras_applicants": 239,
+      "invited_to_interview": 94,
+      "interview_rate_pct": 39.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 239,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 39.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/a7a7bf17-99bc-b38e-fd7f-75a2da082c37",
@@ -159369,7 +161565,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 627,
+      "invited_to_interview": 90,
+      "interview_rate_pct": 14.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 627,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/d9390125-4540-e396-45f0-227dfa5d45fa",
@@ -160170,7 +162377,18 @@
     "program_strengths": [
       "Direct Primary Care Lifestyle Medicine/Nutrition/Obesity Medicine"
     ],
-    "name": "Borinquen Health Care Center, Inc Program"
+    "name": "Borinquen Health Care Center, Inc Program",
+    "application_trends_2026": {
+      "eras_applicants": 1010,
+      "invited_to_interview": 116,
+      "interview_rate_pct": 11.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 1010,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 11.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b5ec4e53-d498-0d73-c1bf-421ec63e60c8",
@@ -160966,7 +163184,18 @@
     "program_strengths": [
       "Behavioral Medicine Health Equity Women's Health"
     ],
-    "name": "AltaMed Health Services Program"
+    "name": "AltaMed Health Services Program",
+    "application_trends_2026": {
+      "eras_applicants": 627,
+      "invited_to_interview": 131,
+      "interview_rate_pct": 20.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 627,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b9caa69e-f7a4-60bd-8a10-f74a0082561d",
@@ -161762,7 +163991,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Zucker School of Medicine at Hofstra/Northwell at Phelps Hospital Program"
+    "name": "Zucker School of Medicine at Hofstra/Northwell at Phelps Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 732,
+      "invited_to_interview": 120,
+      "interview_rate_pct": 16.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 732,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 16.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/aa323cae-f6dd-6d14-fa10-bb5b0c993c4a",
@@ -162551,7 +164791,18 @@
     "program_strengths": [
       "Hospital Medicine Direct Primary Care Wellness/Well-being"
     ],
-    "name": "Mayo Clinic College of Medicine and Science (La Crosse) Program"
+    "name": "Mayo Clinic College of Medicine and Science (La Crosse) Program",
+    "application_trends_2026": {
+      "eras_applicants": 545,
+      "invited_to_interview": 112,
+      "interview_rate_pct": 20.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 545,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/32a0e4b0-00a1-869b-8113-e89ff940d70a",
@@ -163353,7 +165604,18 @@
     ],
     "program_strengths": [
       "Academic Medicine Direct Primary Care Sports Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 489,
+      "invited_to_interview": 109,
+      "interview_rate_pct": 22.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 489,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 22.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/d6d7e379-4770-d159-0488-d4b19ae2bf1f",
@@ -164148,7 +166410,18 @@
     ],
     "program_strengths": [
       "Lifestyle Medicine/Nutrition/Obesity Medicine Hospital Medicine Sports Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1308,
+      "invited_to_interview": 171,
+      "interview_rate_pct": 13.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 1308,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 13.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/6b8d940c-07fb-799f-7c9d-7d5936b0047a",
@@ -164943,7 +167216,18 @@
     "program_strengths": [
       "Hospital Medicine Sports Medicine Addiction medicine"
     ],
-    "name": "Piedmont Columbus Regional (Midtown) Program"
+    "name": "Piedmont Columbus Regional (Midtown) Program",
+    "application_trends_2026": {
+      "eras_applicants": 760,
+      "invited_to_interview": 173,
+      "interview_rate_pct": 22.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 760,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 22.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/ca5df4cf-a4da-05cb-aa13-efd56553c891",
@@ -165744,7 +168028,18 @@
     "program_strengths": [
       "Care of children Hospital Medicine Osteopathic care"
     ],
-    "name": "Tower Health/Reading Hospital Program"
+    "name": "Tower Health/Reading Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 1406,
+      "invited_to_interview": 171,
+      "interview_rate_pct": 12.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 1406,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 12.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/f8b261ec-5b79-e23d-6aba-7541137441c1",
@@ -166540,7 +168835,18 @@
     "program_strengths": [
       "Clinical Informatics Addiction medicine Behavioral Medicine"
     ],
-    "name": "Aurora Health Care (Elkhorn) Program"
+    "name": "Aurora Health Care (Elkhorn) Program",
+    "application_trends_2026": {
+      "eras_applicants": 303,
+      "invited_to_interview": 58,
+      "interview_rate_pct": 19.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 303,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 19.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/3e13cefe-58eb-5b1a-933b-e859464ed5b1",
@@ -167333,7 +169639,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Health Systems Science/Practice Management Lifestyle Medicine/Nutrition/Obesity Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 451,
+      "invited_to_interview": 65,
+      "interview_rate_pct": 14.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 451,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/45e4c2b9-3b58-f614-0a75-c64814a7f688",
@@ -168118,7 +170435,18 @@
     ],
     "program_strengths": [
       "Direct Primary Care Hospital Medicine Comprehensive Pregnancy Care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 414,
+      "invited_to_interview": 58,
+      "interview_rate_pct": 14.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 414,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/5c6f9ca3-8b4b-66ed-f13c-d64975d9bf00",
@@ -168918,7 +171246,18 @@
     "program_strengths": [
       "Care of children Hospital Medicine Osteopathic care"
     ],
-    "name": "Virtua Program"
+    "name": "Virtua Program",
+    "application_trends_2026": {
+      "eras_applicants": 617,
+      "invited_to_interview": 150,
+      "interview_rate_pct": 24.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 617,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 24.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/7c0faa14-af2a-8d61-9741-253a3ded9eb1",
@@ -169713,7 +172052,18 @@
     ],
     "program_strengths": [
       "Academic Medicine Sports Medicine Lifestyle Medicine/Nutrition/Obesity Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 516,
+      "invited_to_interview": 138,
+      "interview_rate_pct": 26.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 516,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 26.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/d41c74a9-d811-b88f-734c-1e493680203c",
@@ -170503,7 +172853,18 @@
     "program_strengths": [
       "Care of children Health Equity Reproductive Care"
     ],
-    "name": "Tufts University at Cambridge Health Alliance Program"
+    "name": "Tufts University at Cambridge Health Alliance Program",
+    "application_trends_2026": {
+      "eras_applicants": 514,
+      "invited_to_interview": 126,
+      "interview_rate_pct": 24.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 514,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 24.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/69d88d4b-e0f4-1543-913a-cdb87de7aa33",
@@ -171291,7 +173652,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Institute for Family Health (Harlem) Program"
+    "name": "Institute for Family Health (Harlem) Program",
+    "application_trends_2026": {
+      "eras_applicants": 989,
+      "invited_to_interview": 107,
+      "interview_rate_pct": 10.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 989,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 10.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/1700237a-1944-6719-044d-462285fbc60f",
@@ -172088,7 +174460,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "El Rio Health/Elk Ridge Community Health Program"
+    "name": "El Rio Health/Elk Ridge Community Health Program",
+    "application_trends_2026": {
+      "eras_applicants": 278,
+      "invited_to_interview": 83,
+      "interview_rate_pct": 29.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 278,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 29.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/3f76ac12-e3c6-b726-f507-b8133fb6026f",
@@ -172882,7 +175265,18 @@
     ],
     "program_strengths": [
       "Health Systems Science/Practice Management Hospital Medicine Research"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 871,
+      "invited_to_interview": 241,
+      "interview_rate_pct": 27.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 871,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/1d885782-1c0a-a5e4-6ea3-e8e809747463",
@@ -173676,7 +176070,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Prime Midwest GME Consortium/Saint Mary of Nazareth Hospital Program"
+    "name": "Prime Midwest GME Consortium/Saint Mary of Nazareth Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 870,
+      "invited_to_interview": 130,
+      "interview_rate_pct": 14.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 870,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c7ec6fdc-89cf-35b4-f12c-913a94bc9d62",
@@ -174476,7 +176881,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Kaiser Permanente Southern California (Riverside) Program"
+    "name": "Kaiser Permanente Southern California (Riverside) Program",
+    "application_trends_2026": {
+      "eras_applicants": 588,
+      "invited_to_interview": 114,
+      "interview_rate_pct": 19.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 588,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 19.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c830ed0f-98bf-712c-e242-ce600274877f",
@@ -175273,7 +177689,18 @@
     "program_strengths": [
       "LGBTQ+ Value-based care Health Equity"
     ],
-    "name": "El Rio Health Program"
+    "name": "El Rio Health Program",
+    "application_trends_2026": {
+      "eras_applicants": 514,
+      "invited_to_interview": 106,
+      "interview_rate_pct": 20.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 514,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/3efa66d9-f644-77bc-05ad-a28eeb6fabb4",
@@ -176074,7 +178501,18 @@
     ],
     "program_strengths": [
       "Sports Medicine Lifestyle Medicine/Nutrition/Obesity Medicine Geriatrics"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1266,
+      "invited_to_interview": 130,
+      "interview_rate_pct": 10.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 1266,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 10.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/261de2ca-e8c8-e687-0389-f509a5d5e990",
@@ -176865,7 +179303,18 @@
     ],
     "program_strengths": [
       "Preventative Medicine and/or Occupational Medicine Comprehensive Pregnancy Care Hospital Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 205,
+      "invited_to_interview": 97,
+      "interview_rate_pct": 47.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 205,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 47.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/c5735461-1c7c-d53b-3ad3-b6435e76392d",
@@ -177647,7 +180096,18 @@
     ],
     "program_strengths": [
       "Other Hospital Medicine Health Equity"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1625,
+      "invited_to_interview": 73,
+      "interview_rate_pct": 4.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 1625,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 4.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/3acacfb2-a5bf-aa57-d374-9a33ad9e8292",
@@ -178431,7 +180891,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 315,
+      "invited_to_interview": 86,
+      "interview_rate_pct": 27.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 315,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/f6aab245-6df5-e566-5cd8-298ed82f2946",
@@ -179218,7 +181689,18 @@
     ],
     "program_strengths": [
       "Geriatrics Hospital Medicine Academic Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 830,
+      "invited_to_interview": 135,
+      "interview_rate_pct": 16.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 830,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 16.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/84f729ab-9da9-c0f7-c214-32a6c9bc4c84",
@@ -180008,7 +182490,18 @@
     "program_strengths": [
       "Hospital Medicine International Medicine/Global Health Wellness/Well-being"
     ],
-    "name": "U P Health System-Marquette Program"
+    "name": "U P Health System-Marquette Program",
+    "application_trends_2026": {
+      "eras_applicants": 268,
+      "invited_to_interview": 91,
+      "interview_rate_pct": 34.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 268,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 34.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/3e64ab05-a404-5438-0d51-d7ad8b3a51f7",
@@ -180798,7 +183291,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Behavioral Medicine Value-based care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 389,
+      "invited_to_interview": 97,
+      "interview_rate_pct": 24.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 389,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 24.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/fb31e7ad-81e6-eb2e-c84a-c583199c3706",
@@ -181586,7 +184090,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Parkview Health Program"
+    "name": "Parkview Health Program",
+    "application_trends_2026": {
+      "eras_applicants": 771,
+      "invited_to_interview": 105,
+      "interview_rate_pct": 13.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 771,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 13.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/1b09da55-1275-ccdf-4c5c-4e81b3a8c2c9",
@@ -182379,7 +184894,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "HCA Florida Healthcare/St. Lucie Hospital Program"
+    "name": "HCA Florida Healthcare/St. Lucie Hospital Program",
+    "application_trends_2026": {
+      "eras_applicants": 724,
+      "invited_to_interview": 147,
+      "interview_rate_pct": 20.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 724,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/9af02095-4475-3285-d83f-6684ec235c7a",
@@ -183174,7 +185700,18 @@
     ],
     "program_strengths": [
       "Comprehensive Pregnancy Care Hospital Medicine Point of care ultrasound"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 599,
+      "invited_to_interview": 100,
+      "interview_rate_pct": 16.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 599,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 16.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/29a72f86-5ed5-a80e-4b0f-7de7db6515ca",
@@ -183976,7 +186513,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Advocate Health Care/Advocate Christ Medical Center Program"
+    "name": "Advocate Health Care/Advocate Christ Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 450,
+      "invited_to_interview": 144,
+      "interview_rate_pct": 32.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 450,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 32.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/fc6c4d44-eaad-d227-10cb-509d37114a0e",
@@ -184786,7 +187334,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Care of children Comprehensive Pregnancy Care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 551,
+      "invited_to_interview": 182,
+      "interview_rate_pct": 33.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 551,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 33.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/2f61d8d7-0071-72a7-16f4-900735da557c",
@@ -185588,7 +188147,18 @@
     ],
     "program_strengths": [
       "Addiction medicine Health Equity Sports Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 676,
+      "invited_to_interview": 188,
+      "interview_rate_pct": 27.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 676,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/de8953ed-1595-6a33-0bf3-8ec7ed510344",
@@ -186383,7 +188953,18 @@
     ],
     "program_strengths": [
       "Sports Medicine Other"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 426,
+      "invited_to_interview": 85,
+      "interview_rate_pct": 20.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 426,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 20.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/5111bc03-345d-3e40-f587-89a21bbd1b7f",
@@ -187177,7 +189758,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Low resourced/Marginalized Populations Reproductive Care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 639,
+      "invited_to_interview": 88,
+      "interview_rate_pct": 13.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 639,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 13.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/378eb79b-90ee-9b51-50bb-af604edf15f7",
@@ -187968,7 +190560,18 @@
     "program_strengths": [
       "Advanced procedural skills Hospital Medicine Lifestyle Medicine/Nutrition/Obesity Medicine"
     ],
-    "name": "East Central Mississippi Health Network, Inc. Program"
+    "name": "East Central Mississippi Health Network, Inc. Program",
+    "application_trends_2026": {
+      "eras_applicants": 400,
+      "invited_to_interview": 109,
+      "interview_rate_pct": 27.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 400,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/e2256275-4869-933f-5cb8-4ef2d739b5cd",
@@ -188768,7 +191371,18 @@
     ],
     "program_strengths": [
       "Integrative medicine Hospice and Palliative Care Health Equity"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1269,
+      "invited_to_interview": 184,
+      "interview_rate_pct": 14.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 1269,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/02a1b755-e3d3-2c00-614f-e64b28a7b72d",
@@ -189547,7 +192161,18 @@
     "program_strengths": [
       "Care of children Women's Health Direct Primary Care"
     ],
-    "name": "DePaul Community Health Centers - New Orleans Program"
+    "name": "DePaul Community Health Centers - New Orleans Program",
+    "application_trends_2026": {
+      "eras_applicants": 409,
+      "invited_to_interview": 46,
+      "interview_rate_pct": 11.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 409,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 11.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/8c77222c-ad35-e21a-1925-f863561fefef",
@@ -190343,7 +192968,18 @@
     ],
     "program_strengths": [
       "Wellness/Well-being Comprehensive Pregnancy Care Osteopathic care"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 493,
+      "invited_to_interview": 160,
+      "interview_rate_pct": 32.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 493,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 32.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/f5d003a8-8924-ddb7-0d45-60976ed084fa",
@@ -191142,7 +193778,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "McLaren Health Care/Greater Lansing/MSU Program"
+    "name": "McLaren Health Care/Greater Lansing/MSU Program",
+    "application_trends_2026": {
+      "eras_applicants": 323,
+      "invited_to_interview": 101,
+      "interview_rate_pct": 31.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 323,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 31.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/72535e25-1da5-6958-b715-2b71aefdf0b5",
@@ -191929,7 +194576,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Texas Institute for Graduate Medical Education and Research (TIGMER) Program"
+    "name": "Texas Institute for Graduate Medical Education and Research (TIGMER) Program",
+    "application_trends_2026": {
+      "eras_applicants": 486,
+      "invited_to_interview": 197,
+      "interview_rate_pct": 40.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 486,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 40.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/9a8ef9c3-dfad-34e6-0cdd-239f13d253a6",
@@ -192719,7 +195377,18 @@
         "programOffering": "46%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 904,
+      "invited_to_interview": 139,
+      "interview_rate_pct": 15.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 904,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 15.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/46d9dd36-8e8a-3776-6dc7-3ab4ca1c9ff6",
@@ -193508,7 +196177,18 @@
         "programOffering": "17%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 406,
+      "invited_to_interview": 182,
+      "interview_rate_pct": 44.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 406,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 44.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/caeca050-fc97-6212-4a44-33c03c226a5b",
@@ -194301,7 +196981,18 @@
     "program_strengths": [
       "Direct Primary Care Women's Health Osteopathic care"
     ],
-    "name": "Yakima Valley Farm Workers Clinic/Sollus Northwest Program"
+    "name": "Yakima Valley Farm Workers Clinic/Sollus Northwest Program",
+    "application_trends_2026": {
+      "eras_applicants": 225,
+      "invited_to_interview": 90,
+      "interview_rate_pct": 40.0
+    },
+    "selectivity_2026": {
+      "program_applicants": 225,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 40.0,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/8916aec5-6150-f0db-6c88-21eb97af2a3b",
@@ -195093,7 +197784,18 @@
         "programOffering": "12%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 734,
+      "invited_to_interview": 108,
+      "interview_rate_pct": 14.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 734,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/5083b776-f44e-09b8-14ab-805d2502227e",
@@ -195891,7 +198593,18 @@
     ],
     "program_strengths": [
       "Geriatrics Hospital Medicine Low resourced/Marginalized Populations"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1299,
+      "invited_to_interview": 190,
+      "interview_rate_pct": 14.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 1299,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/f43086fe-20b5-25f4-3f61-af9956f211e2",
@@ -196676,7 +199389,18 @@
     "program_strengths": [
       "Comprehensive Pregnancy Care Advanced procedural skills Lifestyle Medicine/Nutrition/Obesity Medicine"
     ],
-    "name": "Mountain States Institute for GME and Research Program"
+    "name": "Mountain States Institute for GME and Research Program",
+    "application_trends_2026": {
+      "eras_applicants": 183,
+      "invited_to_interview": 80,
+      "interview_rate_pct": 43.7
+    },
+    "selectivity_2026": {
+      "program_applicants": 183,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 43.7,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/89020256-9981-d254-bd36-e48e746b2430",
@@ -197461,7 +200185,18 @@
     ],
     "program_strengths": [
       "Comprehensive Pregnancy Care Other Geriatrics"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 209,
+      "invited_to_interview": 57,
+      "interview_rate_pct": 27.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 209,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 27.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/0aafb7f8-1569-1d67-a284-43b274de64e3",
@@ -198240,7 +200975,18 @@
     ],
     "program_strengths": [
       "Other Sports Medicine Point of care ultrasound"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1075,
+      "invited_to_interview": 44,
+      "interview_rate_pct": 4.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 1075,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 4.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/9dea7c4f-d691-b5b3-f874-9a6239f39feb",
@@ -199025,7 +201771,18 @@
     "program_strengths": [
       "Academic Medicine Leadership Hospital Medicine"
     ],
-    "name": "In His Image at St John Medical Center Program"
+    "name": "In His Image at St John Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 556,
+      "invited_to_interview": 83,
+      "interview_rate_pct": 14.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 556,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/de27cded-7a5e-234d-f73c-c032a6eec1bb",
@@ -199825,7 +202582,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Kaiser Permanente Southern California (Anaheim) Program"
+    "name": "Kaiser Permanente Southern California (Anaheim) Program",
+    "application_trends_2026": {
+      "eras_applicants": 589,
+      "invited_to_interview": 111,
+      "interview_rate_pct": 18.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 589,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 18.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/a9328854-c2c5-54bb-a5d9-5a5c1c859fe7",
@@ -200627,7 +203395,18 @@
     ],
     "program_strengths": [
       "Academic Medicine Reproductive Care Sports Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 549,
+      "invited_to_interview": 177,
+      "interview_rate_pct": 32.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 549,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 32.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/47dc160c-8d5a-3f79-57d9-63a8cf02e514",
@@ -201421,7 +204200,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Arkansas College of Osteopathic Medicine/Mercy Program"
+    "name": "Arkansas College of Osteopathic Medicine/Mercy Program",
+    "application_trends_2026": {
+      "eras_applicants": 1480,
+      "invited_to_interview": 152,
+      "interview_rate_pct": 10.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 1480,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 10.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/696d6e7b-9c95-25c6-2221-ac8a183e2804",
@@ -202215,7 +205005,18 @@
     "program_strengths": [
       "Hospital Medicine Health Equity Academic Medicine"
     ],
-    "name": "Baptist Memorial Medical Education (Memphis) Program"
+    "name": "Baptist Memorial Medical Education (Memphis) Program",
+    "application_trends_2026": {
+      "eras_applicants": 1373,
+      "invited_to_interview": 159,
+      "interview_rate_pct": 11.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 1373,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 11.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/1d01f320-464c-2fa3-0512-898afb6fa301",
@@ -203012,7 +205813,18 @@
     "program_strengths": [
       "Comprehensive Pregnancy Care Wellness/Well-being Lifestyle Medicine/Nutrition/Obesity Medicine"
     ],
-    "name": "TidalHealth Program"
+    "name": "TidalHealth Program",
+    "application_trends_2026": {
+      "eras_applicants": 1950,
+      "invited_to_interview": 159,
+      "interview_rate_pct": 8.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 1950,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 8.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/5015dc7f-08b3-a1b2-cadc-601ad72930d8",
@@ -203808,7 +206620,18 @@
     ],
     "program_strengths": [
       "Lifestyle Medicine/Nutrition/Obesity Medicine Comprehensive Pregnancy Care LGBTQ+"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 658,
+      "invited_to_interview": 94,
+      "interview_rate_pct": 14.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 658,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 14.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/9d5d3e94-c389-8494-1fc8-d028212ed7d3",
@@ -204591,7 +207414,18 @@
     "program_strengths": [
       "Addiction medicine Academic Medicine Hospital Medicine"
     ],
-    "name": "Stanford Health Care-Sponsored Stanford University Program"
+    "name": "Stanford Health Care-Sponsored Stanford University Program",
+    "application_trends_2026": {
+      "eras_applicants": 600,
+      "invited_to_interview": 117,
+      "interview_rate_pct": 19.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 600,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 19.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/4a52a662-bafa-866c-5358-a4b7a982b84d",
@@ -205373,7 +208207,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Conway Regional Health System Dardanelle Program"
+    "name": "Conway Regional Health System Dardanelle Program",
+    "application_trends_2026": {
+      "eras_applicants": 205,
+      "invited_to_interview": 68,
+      "interview_rate_pct": 33.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 205,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 33.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/26d51d7a-7556-5933-e542-a77c006690bb",
@@ -206159,7 +209004,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 498,
+      "invited_to_interview": 92,
+      "interview_rate_pct": 18.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 498,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 18.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/19f8e6ed-4424-e73b-6039-7b5509e2f43c",
@@ -206965,7 +209821,18 @@
     ],
     "program_strengths": [
       "Wellness/Well-being Hospital Medicine Sports Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 708,
+      "invited_to_interview": 218,
+      "interview_rate_pct": 30.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 708,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 30.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/6a3e06a3-f247-7884-7883-d01ef6318b19",
@@ -207766,7 +210633,18 @@
     ],
     "program_strengths": [
       "Leadership Wellness/Well-being LGBTQ+"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 583,
+      "invited_to_interview": 94,
+      "interview_rate_pct": 16.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 583,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 16.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/8b414080-d3b2-494d-1614-9c0eafba99bb",
@@ -208564,7 +211442,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1248,
+      "invited_to_interview": 132,
+      "interview_rate_pct": 10.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 1248,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 10.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/abc4b8d8-a93a-90cd-778f-ec60520b779b",
@@ -209349,7 +212238,18 @@
     "program_strengths": [
       "Comprehensive Pregnancy Care Care of children Health Equity"
     ],
-    "name": "Community Health Centers, Inc Program"
+    "name": "Community Health Centers, Inc Program",
+    "application_trends_2026": {
+      "eras_applicants": 367,
+      "invited_to_interview": 69,
+      "interview_rate_pct": 18.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 367,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 18.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/45e25e89-37f7-39ea-146b-dd85ab0ac018",
@@ -210128,7 +213028,18 @@
     "program_strengths": [
       "Academic Medicine Direct Primary Care Preventative Medicine and/or Occupational Medicine"
     ],
-    "name": "Kirk Kerkorian School of Medicine at UNLV Program A"
+    "name": "Kirk Kerkorian School of Medicine at UNLV Program A",
+    "application_trends_2026": {
+      "eras_applicants": 173,
+      "invited_to_interview": 20,
+      "interview_rate_pct": 11.6
+    },
+    "selectivity_2026": {
+      "program_applicants": 173,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 11.6,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/260a827f-f266-6ebf-cf19-964a79fa160f",
@@ -210928,7 +213839,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Kaiser Permanente Southern California (Los Angeles) Program"
+    "name": "Kaiser Permanente Southern California (Los Angeles) Program",
+    "application_trends_2026": {
+      "eras_applicants": 624,
+      "invited_to_interview": 120,
+      "interview_rate_pct": 19.2
+    },
+    "selectivity_2026": {
+      "program_applicants": 624,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 19.2,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/fe892418-47e6-4f77-bcad-7b9b3277a8b8",
@@ -211697,7 +214619,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "Sutter Health/Memorial Medical Center Program"
+    "name": "Sutter Health/Memorial Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 523,
+      "invited_to_interview": 167,
+      "interview_rate_pct": 31.9
+    },
+    "selectivity_2026": {
+      "program_applicants": 523,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 31.9,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/b73e0cec-c5e5-3186-e4f5-9dcaa10b96b9",
@@ -212491,7 +215424,18 @@
     "program_strengths": [
       "Direct Primary Care Hospital Medicine Women's Health"
     ],
-    "name": "Emanate Health Program"
+    "name": "Emanate Health Program",
+    "application_trends_2026": {
+      "eras_applicants": 556,
+      "invited_to_interview": 92,
+      "interview_rate_pct": 16.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 556,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 16.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/7898d1cf-2e7d-854a-5217-afa54a9013e3",
@@ -213291,7 +216235,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Academic Medicine Behavioral Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1206,
+      "invited_to_interview": 194,
+      "interview_rate_pct": 16.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 1206,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 16.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/3270ce7b-afa0-5858-c872-921c55484105",
@@ -214077,7 +217032,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "New York Medical College Program"
+    "name": "New York Medical College Program",
+    "application_trends_2026": {
+      "eras_applicants": 903,
+      "invited_to_interview": 91,
+      "interview_rate_pct": 10.1
+    },
+    "selectivity_2026": {
+      "program_applicants": 903,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 10.1,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/219d22bf-00c5-9dd9-8a35-a9d3d3d8478d",
@@ -214870,7 +217836,14 @@
     ],
     "program_strengths": [
       "Leadership Academic Medicine Research"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 1537
+    },
+    "selectivity_2026": {
+      "program_applicants": 1537,
+      "avg_specialty_applicants": 663
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/4b4c713f-aec2-8e19-7c4a-fe7138e6e8ba",
@@ -215671,7 +218644,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Sports Medicine Health Equity"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 638,
+      "invited_to_interview": 69,
+      "interview_rate_pct": 10.8
+    },
+    "selectivity_2026": {
+      "program_applicants": 638,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 10.8,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/6e3a5748-3e7f-bcaa-7dd5-c3d60653895f",
@@ -216456,7 +219440,18 @@
     ],
     "program_strengths": [
       "Hospital Medicine Behavioral Medicine Lifestyle Medicine/Nutrition/Obesity Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 297,
+      "invited_to_interview": 90,
+      "interview_rate_pct": 30.3
+    },
+    "selectivity_2026": {
+      "program_applicants": 297,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 30.3,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/0e1cde41-8d91-171d-1ff5-2155e722bf61",
@@ -217236,7 +220231,18 @@
         "alignmentStatus": 0
       }
     ],
-    "name": "New York Medical College at St Joseph's Medical Center Program"
+    "name": "New York Medical College at St Joseph's Medical Center Program",
+    "application_trends_2026": {
+      "eras_applicants": 1145,
+      "invited_to_interview": 177,
+      "interview_rate_pct": 15.5
+    },
+    "selectivity_2026": {
+      "program_applicants": 1145,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 15.5,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/376bdcbc-89e4-f11d-56f2-bedb5bb0d32d",
@@ -218027,7 +221033,18 @@
     ],
     "program_strengths": [
       "Care of children Health Systems Science/Practice Management Hospital Medicine"
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 584,
+      "invited_to_interview": 90,
+      "interview_rate_pct": 15.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 584,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 15.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/f253dbaa-c92c-2d27-464d-a6d5bb159921",
@@ -218807,7 +221824,18 @@
         "programOffering": "0%",
         "alignmentStatus": 0
       }
-    ]
+    ],
+    "application_trends_2026": {
+      "eras_applicants": 280,
+      "invited_to_interview": 130,
+      "interview_rate_pct": 46.4
+    },
+    "selectivity_2026": {
+      "program_applicants": 280,
+      "avg_specialty_applicants": 663,
+      "program_interview_pct": 46.4,
+      "avg_specialty_interview_pct": 23.3
+    }
   },
   {
     "url": "https://www.residencyexplorer.org/Program/GetByIdWithMedicalSpecialty/407c0a2f-1bbf-7273-1919-1bea7040e83d",
