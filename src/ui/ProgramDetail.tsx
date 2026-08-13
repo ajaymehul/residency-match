@@ -290,15 +290,17 @@ export function ProgramDetail() {
         <section className="px-3 py-2 border-b border-gray-100">
           <h3 className="text-[11px] uppercase tracking-wider text-brand-mauve font-semibold mb-1.5">2026 Match Outcomes</h3>
           <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-xs m-0">
-            {scraped.match_outcomes_2026.categorical_offered != null && (
+            {(scraped.match_outcomes_2026.categorical_offered != null || scraped.match_outcomes_2026.positions_offered != null) && (
               <>
-                <dt className="text-gray-500">Categorical Positions</dt>
-                <dd className="text-gray-800 font-medium m-0">{scraped.match_outcomes_2026.categorical_offered} offered, {scraped.match_outcomes_2026.categorical_filled} filled</dd>
+                <dt className="text-gray-500">Positions</dt>
+                <dd className="text-gray-800 font-medium m-0">
+                  {scraped.match_outcomes_2026.categorical_offered ?? scraped.match_outcomes_2026.positions_offered ?? '—'} offered, {scraped.match_outcomes_2026.categorical_filled ?? scraped.match_outcomes_2026.positions_filled ?? '—'} filled
+                </dd>
               </>
             )}
             {scraped.match_outcomes_2026.preliminary_offered != null && (
               <>
-                <dt className="text-gray-500">Preliminary Positions</dt>
+                <dt className="text-gray-500">Preliminary</dt>
                 <dd className="text-gray-800 font-medium m-0">{scraped.match_outcomes_2026.preliminary_offered} offered, {scraped.match_outcomes_2026.preliminary_filled} filled</dd>
               </>
             )}
