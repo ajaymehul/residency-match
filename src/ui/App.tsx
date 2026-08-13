@@ -31,8 +31,9 @@ import { ListView } from './ListView';
 import { FilterPanel } from './FilterPanel';
 import { ProgramDetail } from './ProgramDetail';
 
-/** The fetch path for scraped data JSON. */
-const SCRAPED_PATH = `${import.meta.env.BASE_URL}program_data.json`;
+/** Fetch paths for program data JSON files. */
+const FM_DATA_PATH = `${import.meta.env.BASE_URL}program_data.json`;
+const IM_DATA_PATH = `${import.meta.env.BASE_URL}program_data_im.json`;
 
 type AppStatus =
   | { kind: 'loading' }
@@ -46,18 +47,41 @@ function App() {
     setStatus({ kind: 'loading' });
 
     try {
-      const response = await fetch(SCRAPED_PATH);
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-      }
+      // Load both FM and IM data in parallel
+      const [fmResponse, imResponse] = await Promise.all([
+        fetch(FM_DATA_PATH),
+        fetch(IM_DATA_PATH),
+      ]);
 
-      const rawPrograms: ScrapedProgram[] = await response.json();
-      const result = loadScrapedPrograms(rawPrograms, citiesDataset as unknown as CityDataset);
+      if (!fmResponse.ok) throw new Error(`FM data: HTTP ${fmResponse.status}`);
+      if (!imResponse.ok) throw new Error(`IM data: HTTP ${imResponse.status}`);
 
-      setStatus({ kind: 'ready', programs: result.programs, summary: result.summary });
+      const [fmRaw, imRaw]: [ScrapedProgram[], ScrapedProgram[]] = await Promise.all([
+        fmResponse.json(),
+        imResponse.json(),
+      ]);
+
+      // Load FM programs
+      const fmResult = loadScrapedPrograms(fmRaw, citiesDataset as unknown as CityDataset, 'Family Medicine');
+      // Load IM programs
+      const imResult = loadScrapedPrograms(imRaw, citiesDataset as unknown as CityDataset, 'Internal Medicine');
+
+      // Combine
+      const allPrograms = [...fmResult.programs, ...imResult.programs];
+      const summary: LoadSummary = {
+        loadedBySpecialty: {
+          'Family Medicine': fmResult.programs.length,
+          'Internal Medicine': imResult.programs.length,
+        },
+        excludedRows: [],
+        geocodedCount: fmResult.summary.geocodedCount + imResult.summary.geocodedCount,
+        unmappedCount: fmResult.summary.unmappedCount + imResult.summary.unmappedCount,
+      };
+
+      setStatus({ kind: 'ready', programs: allPrograms, summary });
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
-      setStatus({ kind: 'error', path: SCRAPED_PATH, message });
+      setStatus({ kind: 'error', path: 'program data', message });
     }
   }, []);
 

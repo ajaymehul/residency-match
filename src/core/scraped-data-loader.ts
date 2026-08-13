@@ -163,6 +163,7 @@ function extractUsImgRate(program: ScrapedProgram): FieldValue<number> {
 export function loadScrapedPrograms(
   rawPrograms: ScrapedProgram[],
   cityDataset: CityDataset,
+  specialty: Specialty = 'Family Medicine',
 ): { programs: EnrichedProgram[]; summary: LoadSummary } {
   const programs: EnrichedProgram[] = [];
   let geocodedCount = 0;
@@ -195,8 +196,8 @@ export function loadScrapedPrograms(
 
     // Build the program
     const program: EnrichedProgram = {
-      id: `Family Medicine:${i + 1}`,
-      specialty: 'Family Medicine' as Specialty,
+      id: `${specialty}:${i + 1}`,
+      specialty,
       name,
       step2Range: extractStep2Range(raw.step2_ck_scores),
       comlexRange: { kind: 'missing' },
@@ -222,7 +223,10 @@ export function loadScrapedPrograms(
   }
 
   const summary: LoadSummary = {
-    loadedBySpecialty: { 'Family Medicine': programs.length, 'Internal Medicine': 0 },
+    loadedBySpecialty: { 
+      'Family Medicine': specialty === 'Family Medicine' ? programs.length : 0,
+      'Internal Medicine': specialty === 'Internal Medicine' ? programs.length : 0,
+    },
     excludedRows: [],
     geocodedCount,
     unmappedCount,

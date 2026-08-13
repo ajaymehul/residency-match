@@ -42,6 +42,7 @@ function isInsufficientData(program: ScoredProgram): boolean {
 /** Column definitions for the list view */
 const COLUMNS: { key: SortColumn; label: string }[] = [
   { key: 'name', label: 'Program' },
+  { key: 'specialty', label: 'Spec.' },
   { key: 'city', label: 'City' },
   { key: 'state', label: 'State' },
   { key: 'matchScore', label: 'Match Score' },

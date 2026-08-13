@@ -158,6 +158,13 @@ export function ProgramDetail() {
         </div>
         <div className="text-[11px] text-gray-500 mt-0.5">
           {safe(() => `${program.city}, ${program.state}`)} • {safe(() => program.region)}
+          <span className={`ml-2 inline-block px-1.5 py-0.5 rounded text-[10px] font-semibold ${
+            program.specialty === 'Family Medicine' 
+              ? 'bg-emerald-100 text-emerald-700' 
+              : 'bg-blue-100 text-blue-700'
+          }`}>
+            {program.specialty === 'Family Medicine' ? 'FM' : 'IM'}
+          </span>
         </div>
         {program.url && (
           <a href={program.url} target="_blank" rel="noopener noreferrer"
