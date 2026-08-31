@@ -21,6 +21,8 @@ import 'leaflet/dist/leaflet.css';
 import { useAppState } from './AppState';
 import { CITIES_ATTRIBUTION } from '../core/cities-attribution';
 import type { FitBand } from '../core/map-model';
+import type { SignalTier } from '../core/signals';
+import { SIGNAL_LABELS } from '../core/signals';
 
 // --- Color scheme for fit bands ---
 const BAND_COLORS: Record<FitBand, string> = {
@@ -29,6 +31,35 @@ const BAND_COLORS: Record<FitBand, string> = {
   low: '#ef4444',        // red
   unavailable: '#9ca3af', // gray
 };
+
+// --- Signal tier colors for map stars ---
+// gold/silver for IM tiers; a distinct violet for the FM flat signal.
+const SIGNAL_COLORS: Record<SignalTier, string> = {
+  gold: '#EAB308',   // gold
+  silver: '#94A3B8', // silver/slate
+  signal: '#8B5CF6', // violet (FM)
+};
+
+/** A colored star DivIcon for a signaled program. */
+function createSignalIcon(tier: SignalTier, isSelected: boolean): L.DivIcon {
+  const size = isSelected ? 30 : 22;
+  const color = SIGNAL_COLORS[tier];
+  // Blue outline when selected, otherwise a subtle dark outline for contrast.
+  const stroke = isSelected ? '#1d4ed8' : 'rgba(0,0,0,0.45)';
+  return L.divIcon({
+    className: 'signal-marker',
+    html: `<div style="
+      font-size: ${size}px;
+      line-height: 1;
+      color: ${color};
+      -webkit-text-stroke: ${isSelected ? 2 : 1}px ${stroke};
+      text-stroke: ${isSelected ? 2 : 1}px ${stroke};
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.4));
+    " aria-label="${SIGNAL_LABELS[tier]} signal">★</div>`,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+  });
+}
 
 const BAND_LABELS: Record<FitBand, string> = {
   high: 'High Fit',
@@ -112,7 +143,7 @@ function MapController() {
 
 // --- Program marker component ---
 function ProgramMarkers() {
-  const { derived, selectedProgramId, actions } = useAppState();
+  const { derived, selectedProgramId, actions, signals } = useAppState();
   const { markers, sortedPrograms } = derived;
 
   return (
@@ -121,6 +152,30 @@ function ProgramMarkers() {
         const isSelected = marker.id === selectedProgramId;
         const program = sortedPrograms.find((p) => p.id === marker.id);
         const programName = program?.name ?? marker.id;
+        const tier = signals.get(marker.id);
+
+        // Signaled programs render as a colored star (gold/silver/violet).
+        if (tier) {
+          return (
+            <Marker
+              key={marker.id}
+              position={[marker.lat, marker.lng]}
+              icon={createSignalIcon(tier, isSelected)}
+              zIndexOffset={isSelected ? 1000 : 500}
+              eventHandlers={{
+                click: () => {
+                  actions.setSelectedProgramId(marker.id);
+                },
+              }}
+            >
+              <Tooltip direction="top" offset={[0, -12]}>
+                <span>
+                  ★ {programName} ({SIGNAL_LABELS[tier]} signal)
+                </span>
+              </Tooltip>
+            </Marker>
+          );
+        }
 
         return (
           <CircleMarker
@@ -180,6 +235,20 @@ export function MapView() {
         <MapController />
         <ProgramMarkers />
       </MapContainer>
+
+      {/* Signal legend */}
+      <div className="absolute top-2 right-2 bg-white/90 rounded-md shadow px-2.5 py-1.5 text-[10px] text-gray-600 z-[1000] leading-tight">
+        <div className="font-semibold text-gray-700 mb-0.5">Signals</div>
+        <div className="flex items-center gap-1">
+          <span style={{ color: SIGNAL_COLORS.gold, WebkitTextStroke: '0.5px rgba(0,0,0,0.45)' }}>★</span> Gold (IM)
+        </div>
+        <div className="flex items-center gap-1">
+          <span style={{ color: SIGNAL_COLORS.silver, WebkitTextStroke: '0.5px rgba(0,0,0,0.45)' }}>★</span> Silver (IM)
+        </div>
+        <div className="flex items-center gap-1">
+          <span style={{ color: SIGNAL_COLORS.signal, WebkitTextStroke: '0.5px rgba(0,0,0,0.45)' }}>★</span> Signal (FM)
+        </div>
+      </div>
 
       {/* CC BY 4.0 cities attribution — subtle inline */}
       <div className="absolute bottom-0 left-0 right-0 bg-white/80 px-2 py-0.5 text-[10px] text-gray-500 z-[1000]">
