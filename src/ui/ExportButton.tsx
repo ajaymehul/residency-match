@@ -114,34 +114,65 @@ function programToCsvRow(program: ScoredProgram): string {
   return fields.map(escapeCsv).join(',');
 }
 
+/** Short label for a specialty, used in the button and export filename. */
+function specialtyShortLabel(specialty: string): string {
+  if (specialty === 'Family Medicine') return 'FM';
+  if (specialty === 'Internal Medicine') return 'IM';
+  return specialty;
+}
+
+/** Filesystem-safe token for a specialty, used in the download filename. */
+function specialtyFileToken(specialty: string): string {
+  return specialtyShortLabel(specialty).toLowerCase().replace(/[^a-z0-9]+/g, '-');
+}
+
+const CSV_HEADER =
+  'Name,Specialty,City,State,Region,Step2 Range,Fit Score,Step2 Fit,IMG Friendliness,Tech Hub Proximity,Nearest Hub,Distance (mi),US IMG Applicants,US IMG Interviewed (est.),US IMG Interview Rate (%),IMG Residents (%),Signal Sent Rate (%),Signal Not Sent Rate (%),URL';
+
+/** Build a CSV string and trigger a browser download. */
+function downloadCsv(programs: ScoredProgram[], filename: string): void {
+  const rows = programs.map(programToCsvRow);
+  const csv = [CSV_HEADER, ...rows].join('\n');
+
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
+
 export function ExportButton() {
-  const { favorites, derived } = useAppState();
+  const { favorites, filters, derived } = useAppState();
+
+  // All favorited programs, then narrow to the selected specialty (if any).
+  const favoritedPrograms = derived.scoredPrograms.filter((p) => favorites.has(p.id));
+  const selectedSpecialty = filters.specialty;
+  const exportPrograms = selectedSpecialty
+    ? favoritedPrograms.filter((p) => p.specialty === selectedSpecialty)
+    : favoritedPrograms;
 
   const handleExport = () => {
-    const favoritedPrograms = derived.scoredPrograms.filter((p) =>
-      favorites.has(p.id),
-    );
-
-    if (favoritedPrograms.length === 0) {
-      alert('No favorited programs to export. Star some programs first!');
+    if (exportPrograms.length === 0) {
+      const scope = selectedSpecialty
+        ? `${specialtyShortLabel(selectedSpecialty)} favorited programs`
+        : 'favorited programs';
+      alert(`No ${scope} to export. Star some programs first!`);
       return;
     }
 
-    const header =
-      'Name,Specialty,City,State,Region,Step2 Range,Fit Score,Step2 Fit,IMG Friendliness,Tech Hub Proximity,Nearest Hub,Distance (mi),US IMG Applicants,US IMG Interviewed (est.),US IMG Interview Rate (%),IMG Residents (%),Signal Sent Rate (%),Signal Not Sent Rate (%),URL';
-    const rows = favoritedPrograms.map(programToCsvRow);
-    const csv = [header, ...rows].join('\n');
-
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'favorites.csv';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
+    const filename = selectedSpecialty
+      ? `favorites-${specialtyFileToken(selectedSpecialty)}.csv`
+      : 'favorites.csv';
+    downloadCsv(exportPrograms, filename);
   };
+
+  const label = selectedSpecialty
+    ? `Export ${specialtyShortLabel(selectedSpecialty)} Favorites as CSV (${exportPrograms.length})`
+    : `Export All Favorites as CSV (${exportPrograms.length})`;
 
   return (
     <button
@@ -149,7 +180,7 @@ export function ExportButton() {
       onClick={handleExport}
       className="w-full mt-3 px-4 py-2 bg-brand-purple text-white text-xs font-medium rounded-md hover:bg-brand-indigo transition-colors cursor-pointer border-none"
     >
-      Export Favorites as CSV ({favorites.size})
+      {label}
     </button>
   );
 }
