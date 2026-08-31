@@ -33,6 +33,8 @@ import type { LatLngBounds, MapMarker } from '../core/map-model';
 import { DEFAULT_TECH_HUBS, DEFAULT_WEIGHTS } from '../core/tech-hubs';
 import type { MatchWeights } from '../core/match-scoring';
 import { DEFAULT_MATCH_WEIGHTS } from '../core/match-scoring';
+import type { SignalMap, SignalTier } from '../core/signals';
+import { deserializeSignals, serializeSignals } from '../core/signals';
 
 /** Actions exposed by the app state context for mutating state. */
 export interface AppStateActions {
@@ -48,6 +50,12 @@ export interface AppStateActions {
   setTechHubs: (hubs: TechHub[]) => void;
   toggleFavorite: (id: string) => void;
   isFavorite: (id: string) => boolean;
+  /** Assign (or reassign) a single program's signal tier. */
+  setSignal: (id: string, tier: SignalTier) => void;
+  /** Remove a program's signal. */
+  removeSignal: (id: string) => void;
+  /** Replace the entire signal map at once (used by the staging modal on save). */
+  setSignals: (next: SignalMap) => void;
 }
 
 /** Derived values computed from the current state. */
@@ -73,6 +81,7 @@ export interface AppStateValue {
   loadSummary: LoadSummary;
   techHubs: TechHub[];
   favorites: Set<string>;
+  signals: SignalMap;
   derived: AppStateDerived;
   actions: AppStateActions;
 }
@@ -138,6 +147,73 @@ export function AppStateProvider({ children }: AppStateProviderProps) {
     return favorites.has(id);
   }, [favorites]);
 
+  /** Add ids to favorites (never removes). Used to auto-favorite on signal. */
+  const ensureFavorites = useCallback((ids: string[]) => {
+    setFavorites((prev) => {
+      const next = new Set(prev);
+      let changed = false;
+      for (const id of ids) {
+        if (!next.has(id)) {
+          next.add(id);
+          changed = true;
+        }
+      }
+      if (!changed) return prev;
+      localStorage.setItem('favorites', JSON.stringify([...next]));
+      return next;
+    });
+  }, []);
+
+  // Signals: initialize from localStorage
+  const [signals, setSignalsState] = useState<SignalMap>(() => {
+    try {
+      const stored = localStorage.getItem('signals');
+      if (stored) {
+        return deserializeSignals(JSON.parse(stored));
+      }
+    } catch {
+      // Ignore parse errors
+    }
+    return new Map();
+  });
+
+  const persistSignals = useCallback((next: SignalMap) => {
+    try {
+      localStorage.setItem('signals', JSON.stringify(serializeSignals(next)));
+    } catch {
+      // Ignore quota/serialization errors
+    }
+  }, []);
+
+  const setSignal = useCallback((id: string, tier: SignalTier) => {
+    setSignalsState((prev) => {
+      const next = new Map(prev);
+      next.set(id, tier);
+      persistSignals(next);
+      return next;
+    });
+    // Auto-favorite so signaled programs show up in the export.
+    ensureFavorites([id]);
+  }, [persistSignals, ensureFavorites]);
+
+  const removeSignal = useCallback((id: string) => {
+    setSignalsState((prev) => {
+      if (!prev.has(id)) return prev;
+      const next = new Map(prev);
+      next.delete(id);
+      persistSignals(next);
+      return next;
+    });
+  }, [persistSignals]);
+
+  const setSignals = useCallback((next: SignalMap) => {
+    const copy = new Map(next);
+    persistSignals(copy);
+    setSignalsState(copy);
+    // Auto-favorite every currently-signaled program (removals don't unfavorite).
+    ensureFavorites([...copy.keys()]);
+  }, [persistSignals, ensureFavorites]);
+
   // Derivation: score all programs when applicantScore, weights, or techHubs change
   const scoredPrograms = useMemo<ScoredProgram[]>(
     () => programs.map((p) => scoreProgram(p, applicantScore, weights, techHubs, matchWeights)),
@@ -191,8 +267,11 @@ export function AppStateProvider({ children }: AppStateProviderProps) {
       setTechHubs,
       toggleFavorite,
       isFavorite,
+      setSignal,
+      removeSignal,
+      setSignals,
     }),
-    [toggleFavorite, isFavorite],
+    [toggleFavorite, isFavorite, setSignal, removeSignal, setSignals],
   );
 
   const derived: AppStateDerived = useMemo(
@@ -220,6 +299,7 @@ export function AppStateProvider({ children }: AppStateProviderProps) {
       loadSummary,
       techHubs,
       favorites,
+      signals,
       derived,
       actions,
     }),
@@ -235,6 +315,7 @@ export function AppStateProvider({ children }: AppStateProviderProps) {
       loadSummary,
       techHubs,
       favorites,
+      signals,
       derived,
       actions,
     ],

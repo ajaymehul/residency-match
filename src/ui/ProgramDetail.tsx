@@ -5,12 +5,15 @@
  * resident demographics, signal impact, salary, visa, match outcomes, and more.
  */
 
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useAppState } from './AppState';
 import { computeMatchScore } from '../core/match-scoring';
 import type { MatchResult } from '../core/match-scoring';
 import type { EnrichedProgram } from '../core/scraped-data-loader';
 import { DEFAULT_TECH_HUBS } from '../core/tech-hubs';
+import { SignalManager, type SignalPending } from './SignalManager';
+import type { SignalTier } from '../core/signals';
+import { SIGNAL_LABELS, canAssign, signalTiersFor } from '../core/signals';
 
 /** Safely render a value, returning "N/A" for errors. */
 function safe<T>(fn: () => T, fallback: T | string = 'N/A'): T | string {
@@ -108,13 +111,17 @@ function ScoreGauge({ score, label }: { score: number | null; label: string }) {
 }
 
 export function ProgramDetail() {
-  const { derived, applicantScore, matchWeights, actions } = useAppState();
+  const { derived, applicantScore, matchWeights, actions, signals } = useAppState();
   const program = derived.selectedProgram as EnrichedProgram | null;
 
   const matchResult: MatchResult | null = useMemo(() => {
     if (!program || !program.scraped) return null;
     return computeMatchScore(program, applicantScore, matchWeights, DEFAULT_TECH_HUBS);
   }, [program, applicantScore, matchWeights]);
+
+  // Signal-manager modal state. Declared before any early return so hook order
+  // stays stable across renders (Rules of Hooks).
+  const [signalModal, setSignalModal] = useState<{ pending: SignalPending | null } | null>(null);
 
   if (!program) {
     return (
@@ -126,6 +133,26 @@ export function ProgramDetail() {
 
   const scraped = (program as EnrichedProgram).scraped;
   const favorited = actions.isFavorite(program.id);
+
+  // Interest-signal state for this program.
+  const signalTiers = signalTiersFor(program.specialty);
+  const currentTier = signals.get(program.id) ?? null;
+
+  /**
+   * Try to assign a tier directly; if that would exceed the tier limit, open
+   * the manager modal in "add mode" so the user can free up room.
+   */
+  const attemptSignal = (tier: SignalTier) => {
+    if (currentTier === tier) {
+      actions.removeSignal(program.id); // toggle off
+      return;
+    }
+    if (canAssign(signals, program.id, tier)) {
+      actions.setSignal(program.id, tier);
+    } else {
+      setSignalModal({ pending: { programId: program.id, tier } });
+    }
+  };
 
   return (
     <aside
@@ -173,6 +200,52 @@ export function ProgramDetail() {
           </a>
         )}
       </div>
+
+      {/* Interest Signal */}
+      <section className="px-3 py-2.5 border-b border-gray-100 bg-gray-50/60">
+        <div className="flex items-center justify-between mb-1.5">
+          <h3 className="text-[11px] uppercase tracking-wider text-brand-mauve font-semibold m-0">
+            Interest Signal
+          </h3>
+          {currentTier ? (
+            <span className="text-[10px] font-semibold text-brand-indigo">
+              Signaled: {SIGNAL_LABELS[currentTier]}
+            </span>
+          ) : (
+            <span className="text-[10px] text-gray-400">Not signaled</span>
+          )}
+        </div>
+        <div className="flex items-center gap-1.5 flex-wrap">
+          {signalTiers.map((t) => {
+            const active = currentTier === t.tier;
+            return (
+              <button
+                key={t.tier}
+                onClick={() => attemptSignal(t.tier)}
+                className={`px-2.5 py-1 text-[11px] font-medium rounded-md cursor-pointer border transition-colors ${
+                  active
+                    ? 'bg-brand-purple text-white border-brand-purple'
+                    : 'bg-white text-gray-600 border-gray-300 hover:border-brand-purple hover:text-brand-indigo'
+                }`}
+                aria-pressed={active}
+              >
+                {active ? `✓ ${t.label}` : `Signal ${t.label}`}
+              </button>
+            );
+          })}
+          <button
+            onClick={() => setSignalModal({ pending: null })}
+            className="px-2 py-1 text-[11px] text-gray-500 hover:text-brand-indigo bg-transparent border-none cursor-pointer underline"
+          >
+            Manage
+          </button>
+        </div>
+        <p className="text-[10px] text-gray-400 mt-1 mb-0">
+          {program.specialty === 'Internal Medicine'
+            ? 'IM: 3 Gold + 12 Silver signals'
+            : 'FM: 5 signals'}
+        </p>
+      </section>
 
       {/* Match Score Summary */}
       {matchResult && (
@@ -440,6 +513,15 @@ export function ProgramDetail() {
           )}
         </dl>
       </section>
+
+      {signalModal && (
+        <SignalManager
+          open
+          specialty={program.specialty}
+          pending={signalModal.pending}
+          onClose={() => setSignalModal(null)}
+        />
+      )}
     </aside>
   );
 }

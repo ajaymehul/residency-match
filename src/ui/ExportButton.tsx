@@ -11,6 +11,8 @@ import { useAppState } from './AppState';
 import { UNAVAILABLE } from '../core/types';
 import type { FieldValue, ScoreRange, SubScore, ScoredProgram } from '../core/types';
 import type { EnrichedProgram } from '../core/scraped-data-loader';
+import type { SignalMap } from '../core/signals';
+import { SIGNAL_LABELS } from '../core/signals';
 
 /** Format a SubScore for CSV: number → fixed 1 decimal, UNAVAILABLE → "N/A" */
 function formatSubScoreCsv(score: SubScore): string {
@@ -87,10 +89,12 @@ function escapeCsv(value: string): string {
   return value;
 }
 
-/** Generate a CSV row from a ScoredProgram. */
-function programToCsvRow(program: ScoredProgram): string {
+/** Generate a CSV row from a ScoredProgram. `signals` supplies the interest tier. */
+function programToCsvRow(program: ScoredProgram, signals: SignalMap): string {
   const img = imgMetrics(program);
+  const tier = signals.get(program.id);
   const fields = [
+    tier ? SIGNAL_LABELS[tier] : '',
     program.name,
     program.specialty,
     program.city,
@@ -127,11 +131,11 @@ function specialtyFileToken(specialty: string): string {
 }
 
 const CSV_HEADER =
-  'Name,Specialty,City,State,Region,Step2 Range,Fit Score,Step2 Fit,IMG Friendliness,Tech Hub Proximity,Nearest Hub,Distance (mi),US IMG Applicants,US IMG Interviewed (est.),US IMG Interview Rate (%),IMG Residents (%),Signal Sent Rate (%),Signal Not Sent Rate (%),URL';
+  'Signal,Name,Specialty,City,State,Region,Step2 Range,Fit Score,Step2 Fit,IMG Friendliness,Tech Hub Proximity,Nearest Hub,Distance (mi),US IMG Applicants,US IMG Interviewed (est.),US IMG Interview Rate (%),IMG Residents (%),Signal Sent Rate (%),Signal Not Sent Rate (%),URL';
 
 /** Build a CSV string and trigger a browser download. */
-function downloadCsv(programs: ScoredProgram[], filename: string): void {
-  const rows = programs.map(programToCsvRow);
+function downloadCsv(programs: ScoredProgram[], signals: SignalMap, filename: string): void {
+  const rows = programs.map((p) => programToCsvRow(p, signals));
   const csv = [CSV_HEADER, ...rows].join('\n');
 
   const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
@@ -146,7 +150,7 @@ function downloadCsv(programs: ScoredProgram[], filename: string): void {
 }
 
 export function ExportButton() {
-  const { favorites, filters, derived } = useAppState();
+  const { favorites, filters, derived, signals } = useAppState();
 
   // All favorited programs, then narrow to the selected specialty (if any).
   const favoritedPrograms = derived.scoredPrograms.filter((p) => favorites.has(p.id));
@@ -167,7 +171,7 @@ export function ExportButton() {
     const filename = selectedSpecialty
       ? `favorites-${specialtyFileToken(selectedSpecialty)}.csv`
       : 'favorites.csv';
-    downloadCsv(exportPrograms, filename);
+    downloadCsv(exportPrograms, signals, filename);
   };
 
   const label = selectedSpecialty
