@@ -260,8 +260,9 @@ export function ProgramDetail() {
               <span className="text-xs text-gray-400 font-normal">/100</span>
             </div>
           </div>
-          <div className="grid grid-cols-5 gap-1">
+          <div className="grid grid-cols-6 gap-1">
             <ScoreGauge score={matchResult.signals.scoreFit} label="Score" />
+            <ScoreGauge score={matchResult.signals.signalImpact} label="Signal" />
             <ScoreGauge score={matchResult.signals.imgInterviewRate} label="IMG Rate" />
             <ScoreGauge score={matchResult.signals.selectivity} label="Select." />
             <ScoreGauge score={matchResult.signals.imgRepresentation} label="IMG Rep" />

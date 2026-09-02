@@ -1,12 +1,16 @@
 /**
  * Enhanced "Match Chance" scoring algorithm using scraped data.
  *
- * 5 signals, each 0–100, with user-adjustable weights:
+ * 6 signals, each 0–100, with user-adjustable weights:
  * 1. Score Fit (25%): Does applicant's score fall within the US IMG invited range?
- * 2. IMG Interview Rate (25%): What % of US IMG applicants get interviews?
- * 3. Selectivity (20%): How favorable is the applicant/invited ratio for US IMGs?
- * 4. IMG Representation (15%): What % of current residents are US IMGs?
- * 5. Tech Hub Proximity (15%): Distance to nearest tech hub.
+ * 2. Signal Impact (25%): Interview rate for applicants who SEND a signal — the
+ *    most direct answer to "if I signal, what's my interview chance?".
+ * 3. IMG Interview Rate (10%): What % of US IMG applicants get interviews.
+ *    Down-weighted: it's confounded by IMG over-application (a large, behavior-
+ *    driven denominator), so it's a noisy proxy on its own.
+ * 4. Selectivity (15%): How favorable is the applicant/invited ratio for US IMGs?
+ * 5. IMG Representation (15%): What % of current residents are US IMGs?
+ * 6. Tech Hub Proximity (10%): Distance to nearest tech hub.
  */
 
 import type { TechHub, Coordinates } from './types';
@@ -15,6 +19,7 @@ import type { ScrapedProgram, EnrichedProgram } from './scraped-data-loader';
 
 export interface MatchWeights {
   scoreFit: number;
+  signalImpact: number;
   imgInterviewRate: number;
   selectivity: number;
   imgRepresentation: number;
@@ -23,14 +28,16 @@ export interface MatchWeights {
 
 export const DEFAULT_MATCH_WEIGHTS: MatchWeights = {
   scoreFit: 25,
-  imgInterviewRate: 25,
-  selectivity: 20,
+  signalImpact: 25,
+  imgInterviewRate: 10,
+  selectivity: 15,
   imgRepresentation: 15,
-  techHubProximity: 15,
+  techHubProximity: 10,
 };
 
 export interface MatchSignals {
   scoreFit: number | null;          // 0-100
+  signalImpact: number | null;      // 0-100
   imgInterviewRate: number | null;  // 0-100
   selectivity: number | null;       // 0-100
   imgRepresentation: number | null; // 0-100
@@ -49,6 +56,8 @@ export interface MatchResult {
   usImgApplicantCount: number | null;
   usImgResidentPct: number | null;
   totalApplicants: number | null;
+  signalSentPct: number | null;
+  signalNotSentPct: number | null;
 }
 
 /**
@@ -110,9 +119,42 @@ function computeScoreFit(applicantScore: number, scraped: ScrapedProgram): numbe
 }
 
 /**
- * Signal 2: IMG Interview Rate (0-100)
+ * The interview rate an applicant can achieve by SENDING this program their
+ * best signal. Handles both dataset schemas:
+ *   - FM: `signal_rates.series['Sent']` (one flat signal tier)
+ *   - IM: `signal_rates.series['Gold Sent']` / `['Silver Sent']` (two tiers)
+ * Returns the highest available sent-rate (the ceiling of signaling), or null
+ * if the program has no signal-rate data.
+ */
+export function bestSignalSentRate(scraped: ScrapedProgram): number | null {
+  const series = scraped.signal_rates?.series;
+  if (!series) return null;
+  const candidates = [series['Sent'], series['Gold Sent'], series['Silver Sent']].filter(
+    (v): v is number => typeof v === 'number',
+  );
+  if (candidates.length === 0) return null;
+  return Math.min(100, Math.max(0, Math.max(...candidates)));
+}
+
+/**
+ * Signal 2: Signal Impact (0-100)
+ * Interview rate for applicants who SEND a program signal — the most direct
+ * predictor of "if I signal this program, what's my interview chance?". It
+ * sidesteps the denominator-inflation problem of the raw IMG rate because it's
+ * conditioned on the behavior (signaling) the applicant actually controls.
+ * For IM this is the Gold-signal rate (the ceiling); for FM the single Sent rate.
+ */
+function computeSignalImpact(scraped: ScrapedProgram): number | null {
+  return bestSignalSentRate(scraped);
+}
+
+/**
+ * Signal 3: IMG Interview Rate (0-100)
  * Direct percentage of US IMG applicants that get interviews.
  * Already on a 0-100 scale from the scraped data.
+ *
+ * NOTE: confounded by IMG over-application (large, behavior-driven denominator),
+ * so it is down-weighted in DEFAULT_MATCH_WEIGHTS relative to Signal Impact.
  */
 function computeImgInterviewRate(scraped: ScrapedProgram): number | null {
   const rate = scraped.interview_rates_by_type?.series?.['US IMG'];
@@ -190,6 +232,7 @@ export function computeMatchScore(
   const scraped = program.scraped;
   
   const scoreFit = computeScoreFit(applicantScore, scraped);
+  const signalImpact = computeSignalImpact(scraped);
   const imgInterviewRate = computeImgInterviewRate(scraped);
   const selectivity = computeSelectivity(scraped);
   const imgRepresentation = computeImgRepresentation(scraped);
@@ -197,6 +240,7 @@ export function computeMatchScore(
 
   const signals: MatchSignals = {
     scoreFit,
+    signalImpact,
     imgInterviewRate,
     selectivity,
     imgRepresentation,
@@ -206,6 +250,7 @@ export function computeMatchScore(
   // Compute weighted composite (only over available signals)
   const signalEntries: { value: number; weight: number }[] = [];
   if (scoreFit !== null) signalEntries.push({ value: scoreFit, weight: weights.scoreFit });
+  if (signalImpact !== null) signalEntries.push({ value: signalImpact, weight: weights.signalImpact });
   if (imgInterviewRate !== null) signalEntries.push({ value: imgInterviewRate, weight: weights.imgInterviewRate });
   if (selectivity !== null) signalEntries.push({ value: selectivity, weight: weights.selectivity });
   if (imgRepresentation !== null) signalEntries.push({ value: imgRepresentation, weight: weights.imgRepresentation });
@@ -234,5 +279,7 @@ export function computeMatchScore(
     usImgApplicantCount: scraped.interview_rates_by_type?.parameters?.countUsimg ?? null,
     usImgResidentPct: scraped.resident_student_type?.series?.['US-IMG'] ?? null,
     totalApplicants: scraped.application_trends_2026?.eras_applicants ?? null,
+    signalSentPct: bestSignalSentRate(scraped),
+    signalNotSentPct: scraped.signal_rates?.series?.['Did Not Send'] ?? null,
   };
 }

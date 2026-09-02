@@ -12,11 +12,23 @@
 
 import { useMemo, type ChangeEvent } from 'react';
 import type { Specialty } from '../core/types';
+import { DEFAULT_MATCH_WEIGHTS } from '../core/match-scoring';
 import { useAppState } from './AppState';
 import { ExportButton } from './ExportButton';
 
 export function FilterPanel() {
   const { applicantScore, matchWeights, filters, derived, actions } = useAppState();
+
+  // Weights are *relative*: the score renormalizes them, so they need not sum
+  // to 100. Show each one's normalized share so the UI is unambiguous.
+  const weightTotal =
+    matchWeights.scoreFit +
+    matchWeights.signalImpact +
+    matchWeights.imgInterviewRate +
+    matchWeights.selectivity +
+    matchWeights.imgRepresentation +
+    matchWeights.techHubProximity;
+  const pct = (w: number) => (weightTotal > 0 ? Math.round((w / weightTotal) * 100) : 0);
 
   const uniqueStates = useMemo(() => {
     const states = new Set<string>();
@@ -161,10 +173,14 @@ export function FilterPanel() {
         <legend className="text-xs font-semibold uppercase tracking-wider text-brand-indigo mb-2">
           Weights
         </legend>
+        <p className="text-[10px] text-gray-400 mb-2 -mt-1">
+          Relative weights — the score normalizes them, so the % shares (not the
+          raw numbers) are what matter.
+        </p>
         <div className="space-y-3">
           <div>
             <label htmlFor="weight-scoreFit" className="block text-xs text-gray-600 mb-0.5">
-              Score Fit: {matchWeights.scoreFit}
+              Score Fit: {matchWeights.scoreFit} <span className="text-gray-400">({pct(matchWeights.scoreFit)}%)</span>
             </label>
             <input
               id="weight-scoreFit"
@@ -178,8 +194,23 @@ export function FilterPanel() {
             />
           </div>
           <div>
+            <label htmlFor="weight-signalImpact" className="block text-xs text-gray-600 mb-0.5">
+              Signal Impact: {matchWeights.signalImpact} <span className="text-gray-400">({pct(matchWeights.signalImpact)}%)</span>
+            </label>
+            <input
+              id="weight-signalImpact"
+              type="range"
+              min={0}
+              max={50}
+              step={5}
+              value={matchWeights.signalImpact}
+              onChange={(e) => actions.setMatchWeights({ ...matchWeights, signalImpact: Number(e.target.value) })}
+              className="w-full accent-brand-purple"
+            />
+          </div>
+          <div>
             <label htmlFor="weight-imgRate" className="block text-xs text-gray-600 mb-0.5">
-              IMG Interview Rate: {matchWeights.imgInterviewRate}
+              IMG Interview Rate: {matchWeights.imgInterviewRate} <span className="text-gray-400">({pct(matchWeights.imgInterviewRate)}%)</span>
             </label>
             <input
               id="weight-imgRate"
@@ -194,7 +225,7 @@ export function FilterPanel() {
           </div>
           <div>
             <label htmlFor="weight-selectivity" className="block text-xs text-gray-600 mb-0.5">
-              Selectivity: {matchWeights.selectivity}
+              Selectivity: {matchWeights.selectivity} <span className="text-gray-400">({pct(matchWeights.selectivity)}%)</span>
             </label>
             <input
               id="weight-selectivity"
@@ -209,7 +240,7 @@ export function FilterPanel() {
           </div>
           <div>
             <label htmlFor="weight-imgRep" className="block text-xs text-gray-600 mb-0.5">
-              IMG Representation: {matchWeights.imgRepresentation}
+              IMG Representation: {matchWeights.imgRepresentation} <span className="text-gray-400">({pct(matchWeights.imgRepresentation)}%)</span>
             </label>
             <input
               id="weight-imgRep"
@@ -224,7 +255,7 @@ export function FilterPanel() {
           </div>
           <div>
             <label htmlFor="weight-cityProx" className="block text-xs text-gray-600 mb-0.5">
-              Major City Proximity: {matchWeights.techHubProximity}
+              Major City Proximity: {matchWeights.techHubProximity} <span className="text-gray-400">({pct(matchWeights.techHubProximity)}%)</span>
             </label>
             <input
               id="weight-cityProx"
@@ -237,12 +268,15 @@ export function FilterPanel() {
               className="w-full accent-brand-purple"
             />
           </div>
+          <div className="text-[10px] text-gray-400 text-right">
+            Total: {weightTotal}{weightTotal === 0 ? ' — add weight to at least one signal' : ''}
+          </div>
           <button
             type="button"
-            onClick={() => actions.setMatchWeights({ scoreFit: 25, imgInterviewRate: 25, selectivity: 20, imgRepresentation: 15, techHubProximity: 15 })}
+            onClick={() => actions.setMatchWeights({ ...DEFAULT_MATCH_WEIGHTS })}
             className="w-full px-3 py-1.5 text-xs border border-brand-purple text-brand-purple rounded-md hover:bg-brand-purple hover:text-white transition-colors"
           >
-            Reset to 25/25/20/15/15
+            Reset to defaults
           </button>
         </div>
       </fieldset>
@@ -439,14 +473,15 @@ export function FilterPanel() {
           How Fit Score Works
         </legend>
         <p className="text-xs text-gray-500 leading-relaxed mb-1.5">
-          Fit Score is a weighted average of three sub-scores:
+          Match Chance is a weighted average of six sub-scores (shares shown):
         </p>
         <ul className="text-xs text-gray-500 leading-relaxed pl-4 space-y-1 list-disc">
-          <li><strong className="text-gray-700">Score Fit ({matchWeights.scoreFit})</strong> — How well your Step 2 score fits the program's US IMG invited range.</li>
-          <li><strong className="text-gray-700">IMG Interview Rate ({matchWeights.imgInterviewRate})</strong> — What % of US IMG applicants get interviews.</li>
-          <li><strong className="text-gray-700">Selectivity ({matchWeights.selectivity})</strong> — Favorable ratio of positions to applicants for US IMGs.</li>
-          <li><strong className="text-gray-700">IMG Representation ({matchWeights.imgRepresentation})</strong> — What % of current residents are US IMGs.</li>
-          <li><strong className="text-gray-700">City Proximity ({matchWeights.techHubProximity})</strong> — 100 if adjacent to a major city, 0 at 150+ miles away.</li>
+          <li><strong className="text-gray-700">Score Fit ({pct(matchWeights.scoreFit)}%)</strong> — How well your Step 2 score fits the program's US IMG invited range.</li>
+          <li><strong className="text-gray-700">Signal Impact ({pct(matchWeights.signalImpact)}%)</strong> — Interview rate for applicants who <em>sent a signal</em>; the most direct predictor if you plan to signal.</li>
+          <li><strong className="text-gray-700">IMG Interview Rate ({pct(matchWeights.imgInterviewRate)}%)</strong> — % of US IMG applicants interviewed. Down-weighted: skewed by IMG over-application.</li>
+          <li><strong className="text-gray-700">Selectivity ({pct(matchWeights.selectivity)}%)</strong> — Favorable ratio of positions to applicants for US IMGs.</li>
+          <li><strong className="text-gray-700">IMG Representation ({pct(matchWeights.imgRepresentation)}%)</strong> — What % of current residents are US IMGs.</li>
+          <li><strong className="text-gray-700">City Proximity ({pct(matchWeights.techHubProximity)}%)</strong> — 100 if adjacent to a major city, 0 at 150+ miles away.</li>
         </ul>
         <p className="text-xs text-gray-500 leading-relaxed mt-1.5">
           If a sub-score can't be computed (missing data), its weight is redistributed to the others.

@@ -67,8 +67,12 @@ function imgMetrics(program: ScoredProgram) {
   }
 
   // Signal impact: interview rate when a signal was sent vs. not sent.
+  // FM uses 'Sent'; IM uses 'Gold Sent'/'Silver Sent' — take the best available.
   const signal = scraped?.signal_rates?.series;
-  const signalSentPct = signal?.['Sent'];
+  const sentCandidates = [signal?.['Sent'], signal?.['Gold Sent'], signal?.['Silver Sent']].filter(
+    (v): v is number => typeof v === 'number',
+  );
+  const signalSentPct = sentCandidates.length > 0 ? Math.max(...sentCandidates) : undefined;
   const signalNotSentPct = signal?.['Did Not Send'];
 
   return {
