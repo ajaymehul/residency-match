@@ -8,12 +8,37 @@ import { useMemo, useState } from 'react';
 
 import type { ScoredProgram } from '../core/types';
 import { CRITERIA, MAX_SCORE_TOTAL } from '../core/interview-criteria';
-import type { InterviewFormat, InterviewStatus } from '../core/interview-store';
+import { interviewUtc, type InterviewFormat, type InterviewRecord, type InterviewStatus } from '../core/interview-store';
+import { formatDateTimeInZone, localTimeZone, timeZoneOptions } from '../core/timezone';
 import { useInterviews } from './InterviewState';
 import { RatingModal } from './RatingModal';
 
 const inputCls =
   'w-full px-2 py-1 text-[11px] bg-white border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-brand-purple/40';
+
+/** Confirms the entered time in the program's zone and in the viewer's. */
+function WhenSummary({ record }: { record: InterviewRecord }) {
+  if (!record.date) return null;
+  if (!record.time) {
+    return <p className="mt-1 mb-0 text-[10px] text-gray-500">Add a time to see it in your time zone.</p>;
+  }
+  const utc = interviewUtc(record);
+  if (utc === null) return null;
+  const there = formatDateTimeInZone(utc, record.timeZone);
+  const mine = formatDateTimeInZone(utc, localTimeZone());
+  return (
+    <div className="mt-1 text-[10px] text-gray-600 bg-white border border-gray-200 rounded px-2 py-1 leading-snug">
+      <div>
+        Program time: <span className="font-medium">{there}</span>
+      </div>
+      {mine !== there && (
+        <div>
+          Your time: <span className="font-medium text-brand-indigo">{mine}</span>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export function InterviewEditor({ program }: { program: ScoredProgram }) {
   const { data, keyForProgram, entries, ranked, actions } = useInterviews();
@@ -81,6 +106,16 @@ export function InterviewEditor({ program }: { program: ScoredProgram }) {
           <span className="block text-[10px] text-gray-500">Time</span>
           <input type="time" value={record.time} onChange={(e) => update(key, { time: e.target.value })} className={inputCls} />
         </label>
+        <label className="block col-span-2">
+          <span className="block text-[10px] text-gray-500">Time zone the time is in (defaults to the program's)</span>
+          <select value={record.timeZone} onChange={(e) => update(key, { timeZone: e.target.value })} className={inputCls}>
+            {timeZoneOptions(record.timeZone).map((o) => (
+              <option key={o.id} value={o.id}>
+                {o.label}
+              </option>
+            ))}
+          </select>
+        </label>
         <label className="block">
           <span className="block text-[10px] text-gray-500">Format</span>
           <select value={record.format} onChange={(e) => update(key, { format: e.target.value as InterviewFormat })} className={inputCls}>
@@ -97,6 +132,7 @@ export function InterviewEditor({ program }: { program: ScoredProgram }) {
           </select>
         </label>
       </div>
+      <WhenSummary record={record} />
       <label className="block mt-1.5">
         <span className="block text-[10px] text-gray-500">Schedule notes (contact, pre-interview dinner, links…)</span>
         <textarea value={record.scheduleNotes} onChange={(e) => update(key, { scheduleNotes: e.target.value })} rows={2} className={`${inputCls} resize-y`} />

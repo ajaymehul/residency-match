@@ -12,6 +12,7 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ReactNode,
 } from 'react';
@@ -22,8 +23,11 @@ import type { EnrichedProgram } from '../core/scraped-data-loader';
 import { isRatingComplete, ratedCount, scoreTotal } from '../core/interview-criteria';
 import { computeStandings, type EloMatch, type EloStanding } from '../core/elo';
 import {
+  compareByInterviewTime,
+  INTERVIEW_STORAGE_KEY,
   interviewKey,
   loadInterviewData,
+  parseStoredInterviewData,
   newInterviewRecord,
   saveInterviewData,
   type InterviewData,
@@ -87,6 +91,8 @@ export function InterviewProvider({ children }: { children: ReactNode }) {
   const { derived } = useAppState();
 
   const [data, setData] = useState<InterviewData>(loadInterviewData);
+  /** JSON of the data last read from or written to storage. */
+  const lastSynced = useRef<string | null>(null);
   const [interviewMode, setInterviewModeState] = useState<boolean>(() => {
     try {
       return localStorage.getItem(MODE_KEY) === '1';
@@ -96,10 +102,33 @@ export function InterviewProvider({ children }: { children: ReactNode }) {
   });
   const [compareOpen, setCompareOpen] = useState(false);
 
-  // Persist to localStorage (syncing an external system).
+  // Persist to localStorage, but only when the data actually changed since it
+  // was loaded or last synced. Mounting, remounting, or re-running effects
+  // (e.g. dev hot reload) never writes, so a tab holding stale data can't
+  // overwrite newer data saved by another tab.
   useEffect(() => {
+    const json = JSON.stringify(data);
+    if (lastSynced.current === null) {
+      lastSynced.current = json;
+      return;
+    }
+    if (json === lastSynced.current) return;
+    lastSynced.current = json;
     saveInterviewData(data);
   }, [data]);
+
+  // Keep open tabs in sync: adopt changes saved by another tab.
+  useEffect(() => {
+    const onStorage = (e: StorageEvent) => {
+      if (e.key !== INTERVIEW_STORAGE_KEY) return;
+      const next = parseStoredInterviewData(e.newValue);
+      if (!next) return; // unreadable — keep what we have
+      lastSynced.current = JSON.stringify(next);
+      setData(next);
+    };
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, []);
 
   const setInterviewMode = useCallback((on: boolean) => {
     setInterviewModeState(on);
@@ -135,7 +164,7 @@ export function InterviewProvider({ children }: { children: ReactNode }) {
     const rankedList = all.filter((e) => e.complete).sort(byElo);
     const pendingList = all
       .filter((e) => !e.complete)
-      .sort((a, b) => (a.record.date || '9999').localeCompare(b.record.date || '9999') || a.record.name.localeCompare(b.record.name));
+      .sort((a, b) => compareByInterviewTime(a.record, b.record));
     return { entries: [...rankedList, ...pendingList], ranked: rankedList, pending: pendingList };
   }, [data, programForKey]);
 

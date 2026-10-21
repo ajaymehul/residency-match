@@ -15,6 +15,8 @@ import { useInterviews, type RankEntry } from './InterviewState';
 import { CRITERIA, MAX_SCORE_TOTAL } from '../core/interview-criteria';
 import type { ScoredProgram } from '../core/types';
 import { SpecBadge } from './ProgramFacts';
+import { compareByInterviewTime, formatInterviewWhen, interviewUtc } from '../core/interview-store';
+import { formatTimeInZone, localTimeZone, tzAbbreviation } from '../core/timezone';
 
 type Tab = 'interviews' | 'rank';
 
@@ -29,12 +31,19 @@ function StatusStar({ entry }: { entry: RankEntry }) {
   );
 }
 
-function formatWhen(date: string, time: string): string {
-  if (!date) return '—';
-  const d = new Date(`${date}T${time || '00:00'}`);
-  if (Number.isNaN(d.getTime())) return date;
-  const day = d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
-  return time ? `${day} ${d.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })}` : day;
+/** Interview time in the viewer's zone, with the program's own time below when it differs. */
+function WhenCell({ record }: { record: RankEntry['record'] }) {
+  const local = localTimeZone();
+  const mine = formatInterviewWhen(record, local);
+  const utc = record.time ? interviewUtc(record) : null;
+  const there = utc !== null ? formatTimeInZone(utc, record.timeZone) : null;
+  const showThere = there !== null && there !== formatTimeInZone(utc!, local);
+  return (
+    <>
+      <div>{mine}</div>
+      {showThere && <div className="text-[10px] text-gray-400">{there} program time</div>}
+    </>
+  );
 }
 
 function AddProgramSearch() {
@@ -109,12 +118,7 @@ export function InterviewPanel() {
     () =>
       entries
         .slice()
-        .sort(
-          (a, b) =>
-            (a.record.date || '9999').localeCompare(b.record.date || '9999') ||
-            (a.record.time || '').localeCompare(b.record.time || '') ||
-            a.record.name.localeCompare(b.record.name),
-        ),
+        .sort((a, b) => compareByInterviewTime(a.record, b.record)),
     [entries],
   );
 
@@ -175,7 +179,7 @@ export function InterviewPanel() {
                 <th className={th} />
                 <th className={th}>Program</th>
                 <th className={th}>Location</th>
-                <th className={th}>When</th>
+                <th className={th}>When (your time, {tzAbbreviation(Date.now(), localTimeZone())})</th>
                 <th className={th}>Format</th>
                 <th className={th}>Rated</th>
                 <th className={th}>Total</th>
@@ -189,7 +193,7 @@ export function InterviewPanel() {
                     <SpecBadge specialty={e.record.specialty} /> {e.record.name}
                   </td>
                   <td className={td}>{e.record.city}, {e.record.state}</td>
-                  <td className={td}>{formatWhen(e.record.date, e.record.time)}</td>
+                  <td className={td}><WhenCell record={e.record} /></td>
                   <td className={td}>{e.record.format === 'in-person' ? 'In-person' : e.record.format === 'virtual' ? 'Virtual' : '—'}</td>
                   <td className={td}>{e.rated}/{CRITERIA.length}</td>
                   <td className={td}>{e.rated ? `${e.total}/${MAX_SCORE_TOTAL}` : '—'}</td>

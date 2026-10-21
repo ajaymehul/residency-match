@@ -9,6 +9,14 @@
 import type { Specialty } from './types';
 import { CRITERION_IDS, isValidScore, type CriterionId, type Ratings } from './interview-criteria';
 import type { EloMatch } from './elo';
+import {
+  defaultTimeZone,
+  formatDateInZone,
+  formatDateTimeInZone,
+  isValidTimeZone,
+  localTimeZone,
+  zonedWallTimeToUtc,
+} from './timezone';
 
 export const INTERVIEW_STORAGE_KEY = 'interviews:v1';
 
@@ -25,8 +33,10 @@ export interface InterviewRecord {
   status: InterviewStatus;
   /** YYYY-MM-DD */
   date: string;
-  /** HH:MM (24h) */
+  /** HH:MM (24h), wall-clock in `timeZone`. */
   time: string;
+  /** IANA zone the date/time were entered in (defaults to the program's local zone). */
+  timeZone: string;
   format: InterviewFormat;
   scheduleNotes: string;
   ratings: Ratings;
@@ -58,6 +68,7 @@ export function newInterviewRecord(
     status: 'scheduled',
     date: '',
     time: '',
+    timeZone: defaultTimeZone(input.city, input.state),
     format: '',
     scheduleNotes: '',
     ratings: {},
@@ -91,15 +102,21 @@ function parseRecord(key: string, raw: unknown): InterviewRecord | null {
     }
   }
 
+  const city = str(r.city);
+  const state = str(r.state);
+
   return {
     key,
     name: str(r.name),
     specialty,
-    city: str(r.city),
-    state: str(r.state),
+    city,
+    state,
     status: r.status === 'completed' ? 'completed' : 'scheduled',
     date: str(r.date),
     time: str(r.time),
+    // Records saved before time zones existed were entered and shown in the
+    // browser's local time, so they keep that meaning.
+    timeZone: isValidTimeZone(r.timeZone) ? r.timeZone : localTimeZone(),
     format: r.format === 'virtual' || r.format === 'in-person' ? r.format : '',
     scheduleNotes: str(r.scheduleNotes),
     ratings,
@@ -137,13 +154,35 @@ export function deserializeInterviewData(raw: unknown): InterviewData {
   return { records, matches };
 }
 
-export function loadInterviewData(): InterviewData {
+/** Where unreadable saved data is copied before anything could overwrite it. */
+export const INTERVIEW_BACKUP_KEY = `${INTERVIEW_STORAGE_KEY}:backup`;
+
+/** Parse a raw stored string; returns null if it isn't valid JSON. */
+export function parseStoredInterviewData(raw: string | null): InterviewData | null {
+  if (!raw) return { records: {}, matches: [] };
   try {
-    const stored = localStorage.getItem(INTERVIEW_STORAGE_KEY);
-    return stored ? deserializeInterviewData(JSON.parse(stored)) : { records: {}, matches: [] };
+    return deserializeInterviewData(JSON.parse(raw));
+  } catch {
+    return null;
+  }
+}
+
+export function loadInterviewData(): InterviewData {
+  let stored: string | null;
+  try {
+    stored = localStorage.getItem(INTERVIEW_STORAGE_KEY);
   } catch {
     return { records: {}, matches: [] };
   }
+  const parsed = parseStoredInterviewData(stored);
+  if (parsed) return parsed;
+  // Unreadable: keep a copy so a later save can't destroy it.
+  try {
+    localStorage.setItem(INTERVIEW_BACKUP_KEY, stored ?? '');
+  } catch {
+    // ignore
+  }
+  return { records: {}, matches: [] };
 }
 
 export function saveInterviewData(data: InterviewData): void {
@@ -152,4 +191,37 @@ export function saveInterviewData(data: InterviewData): void {
   } catch {
     // Private mode / quota exceeded — keep working in memory.
   }
+}
+
+/**
+ * UTC instant of the interview, or null if no date is set. A date with no
+ * time is placed at noon in its zone so it sorts on the right day.
+ */
+export function interviewUtc(rec: Pick<InterviewRecord, 'date' | 'time' | 'timeZone'>): number | null {
+  if (!rec.date) return null;
+  return zonedWallTimeToUtc(rec.date, rec.time || '12:00', rec.timeZone);
+}
+
+/**
+ * Human-readable interview time in `displayZone`, always with the zone
+ * abbreviation ("Thu, Oct 15, 6:00 AM PDT"). Date-only entries show just the
+ * date, in the interview's own zone (a bare date isn't shifted across zones).
+ */
+export function formatInterviewWhen(
+  rec: Pick<InterviewRecord, 'date' | 'time' | 'timeZone'>,
+  displayZone: string,
+): string {
+  const utc = interviewUtc(rec);
+  if (utc === null) return rec.date || '—';
+  return rec.time ? formatDateTimeInZone(utc, displayZone) : formatDateInZone(utc, rec.timeZone);
+}
+
+/** Sort comparator: earliest interview first, undated last. */
+export function compareByInterviewTime(
+  a: Pick<InterviewRecord, 'date' | 'time' | 'timeZone' | 'name'>,
+  b: Pick<InterviewRecord, 'date' | 'time' | 'timeZone' | 'name'>,
+): number {
+  const ta = interviewUtc(a) ?? Number.POSITIVE_INFINITY;
+  const tb = interviewUtc(b) ?? Number.POSITIVE_INFINITY;
+  return ta === tb ? a.name.localeCompare(b.name) : ta - tb;
 }

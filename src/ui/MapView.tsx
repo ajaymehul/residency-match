@@ -23,6 +23,8 @@ import { CITIES_ATTRIBUTION } from '../core/cities-attribution';
 import type { FitBand, LatLngBounds, MapMarker } from '../core/map-model';
 import { buildMarkers, computeBounds } from '../core/map-model';
 import { useInterviews, type RankEntry } from './InterviewState';
+import { formatInterviewWhen } from '../core/interview-store';
+import { localTimeZone } from '../core/timezone';
 import type { SignalTier } from '../core/signals';
 import { SIGNAL_LABELS } from '../core/signals';
 
@@ -193,7 +195,12 @@ function InterviewMarkers({ markers }: { markers: MapMarker[] }) {
           >
             <Tooltip direction="top" offset={[0, -12]}>
               <span>
-                ★ {entry.record.name} — {entry.complete ? `rated, Elo ${Math.round(entry.standing.elo)}` : entry.record.date ? `scheduled ${entry.record.date}` : 'scheduled'}
+                ★ {entry.record.name} —{' '}
+                {entry.complete
+                  ? `rated, Elo ${Math.round(entry.standing.elo)}`
+                  : entry.record.date
+                    ? `scheduled ${formatInterviewWhen(entry.record, localTimeZone())}`
+                    : 'scheduled'}
               </span>
             </Tooltip>
           </Marker>
