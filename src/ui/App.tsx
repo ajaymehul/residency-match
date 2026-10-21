@@ -30,6 +30,9 @@ import { MapView } from './MapView';
 import { ListView } from './ListView';
 import { FilterPanel } from './FilterPanel';
 import { ProgramDetail } from './ProgramDetail';
+import { InterviewProvider, useInterviews } from './InterviewState';
+import { InterviewPanel } from './InterviewPanel';
+import { CompareGame } from './CompareGame';
 
 /** Fetch paths for program data JSON files. */
 const FM_DATA_PATH = `${import.meta.env.BASE_URL}program_data.json`;
@@ -128,8 +131,45 @@ function App() {
 
   return (
     <AppStateProvider>
-      <AppLayout programs={status.programs} summary={status.summary} />
+      <InterviewProvider>
+        <AppLayout programs={status.programs} summary={status.summary} />
+      </InterviewProvider>
     </AppStateProvider>
+  );
+}
+
+/** Header controls: interview-mode toggle (top right) and Compare launcher. */
+function InterviewModeControls() {
+  const { interviewMode, setInterviewMode, ranked, setCompareOpen } = useInterviews();
+  return (
+    <div className="flex items-center gap-2">
+      {interviewMode && (
+        <button
+          type="button"
+          onClick={() => setCompareOpen(true)}
+          disabled={ranked.length < 2}
+          title={ranked.length < 2 ? 'Fully rate at least 2 programs to compare' : 'Compare two programs (Elo)'}
+          className="px-2.5 py-1 text-[11px] font-medium rounded-md border border-white/40 text-white bg-white/10 hover:bg-white/20 cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
+        >
+          ⚔ Compare
+        </button>
+      )}
+      <label className="flex items-center gap-1.5 text-[11px] text-white cursor-pointer select-none">
+        <span>Interview mode</span>
+        <button
+          type="button"
+          role="switch"
+          aria-checked={interviewMode}
+          aria-label="Interview mode"
+          onClick={() => setInterviewMode(!interviewMode)}
+          className={`relative w-8 h-4 rounded-full border-none cursor-pointer transition-colors ${interviewMode ? 'bg-orange-500' : 'bg-white/30'}`}
+        >
+          <span
+            className={`absolute top-0.5 w-3 h-3 rounded-full bg-white transition-all ${interviewMode ? 'left-[18px]' : 'left-0.5'}`}
+          />
+        </button>
+      </label>
+    </div>
   );
 }
 
@@ -139,6 +179,7 @@ function App() {
  */
 function AppLayout({ programs, summary }: { programs: GeocodedProgram[]; summary: LoadSummary }) {
   const { actions } = useAppState();
+  const { interviewMode, compareOpen } = useInterviews();
 
   useEffect(() => {
     actions.setPrograms(programs);
@@ -147,25 +188,28 @@ function AppLayout({ programs, summary }: { programs: GeocodedProgram[]; summary
 
   return (
     <div className="flex flex-col h-screen overflow-hidden">
-      <header className="flex-shrink-0 bg-brand-indigo px-4 py-2.5">
+      <header className="flex-shrink-0 bg-brand-indigo px-4 py-2.5 flex items-center justify-between">
         <h1 className="text-white font-sans text-xl font-bold tracking-tight m-0">
           Residency Match
         </h1>
+        <InterviewModeControls />
       </header>
 
-      <LoadSummaryBanner />
+      {!interviewMode && <LoadSummaryBanner />}
 
       <main className="flex flex-1 overflow-hidden">
-        <aside className="w-[280px] flex-shrink-0 overflow-y-auto border-r border-brand-rose/30 p-3">
-          <FilterPanel />
-        </aside>
+        {!interviewMode && (
+          <aside className="w-[280px] flex-shrink-0 overflow-y-auto border-r border-brand-rose/30 p-3">
+            <FilterPanel />
+          </aside>
+        )}
 
         <section className="flex-1 flex flex-col overflow-hidden">
           <div className="flex-1 min-h-[300px]">
             <MapView />
           </div>
           <div className="h-[40%] overflow-y-auto border-t border-brand-rose/30">
-            <ListView />
+            {interviewMode ? <InterviewPanel /> : <ListView />}
           </div>
         </section>
 
@@ -173,6 +217,8 @@ function AppLayout({ programs, summary }: { programs: GeocodedProgram[]; summary
           <ProgramDetail />
         </aside>
       </main>
+
+      {compareOpen && <CompareGame />}
     </div>
   );
 }

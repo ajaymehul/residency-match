@@ -12,6 +12,8 @@ import type { MatchResult } from '../core/match-scoring';
 import type { EnrichedProgram } from '../core/scraped-data-loader';
 import { DEFAULT_TECH_HUBS } from '../core/tech-hubs';
 import { SignalManager, type SignalPending } from './SignalManager';
+import { InterviewEditor } from './InterviewEditor';
+import { yesNo } from './ProgramFacts';
 import type { SignalTier } from '../core/signals';
 import { SIGNAL_LABELS, canAssign, signalTiersFor } from '../core/signals';
 
@@ -200,6 +202,10 @@ export function ProgramDetail() {
           </a>
         )}
       </div>
+
+      {/* Interview tracking */}
+      {/* `program` is derived.selectedProgram re-typed, so this is non-null here. */}
+      <InterviewEditor program={derived.selectedProgram!} />
 
       {/* Interest Signal */}
       <section className="px-3 py-2.5 border-b border-gray-100 bg-gray-50/60">
@@ -427,9 +433,9 @@ export function ProgramDetail() {
             <>
               <dt className="text-gray-500">Visa</dt>
               <dd className="text-gray-800 font-medium m-0">
-                J-1: {scraped.visa_sponsorship.j1 ? '✓' : '✗'} | 
-                H-1B: {scraped.visa_sponsorship.h1b ? '✓' : '✗'}
-                {scraped.visa_sponsorship.f1 !== undefined && ` | F-1: ${scraped.visa_sponsorship.f1 ? '✓' : '✗'}`}
+                J-1: {yesNo(scraped.visa_sponsorship.j1) ? '✓' : '✗'} | 
+                H-1B: {yesNo(scraped.visa_sponsorship.h1b) ? '✓' : '✗'}
+                {scraped.visa_sponsorship.f1 !== undefined && ` | F-1: ${yesNo(scraped.visa_sponsorship.f1) ? '✓' : '✗'}`}
               </dd>
             </>
           )}

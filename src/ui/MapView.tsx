@@ -6,7 +6,7 @@
  * Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 8.6, 8.7
  */
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import {
   MapContainer,
   TileLayer,
@@ -20,7 +20,9 @@ import 'leaflet/dist/leaflet.css';
 
 import { useAppState } from './AppState';
 import { CITIES_ATTRIBUTION } from '../core/cities-attribution';
-import type { FitBand } from '../core/map-model';
+import type { FitBand, LatLngBounds, MapMarker } from '../core/map-model';
+import { buildMarkers, computeBounds } from '../core/map-model';
+import { useInterviews, type RankEntry } from './InterviewState';
 import type { SignalTier } from '../core/signals';
 import { SIGNAL_LABELS } from '../core/signals';
 
@@ -87,10 +89,32 @@ function createMajorCityIcon(): L.DivIcon {
   });
 }
 
+// --- Interview-mode star colors ---
+const INTERVIEW_COLORS = {
+  scheduled: '#F97316', // orange — scheduled / rating incomplete
+  rated: '#16A34A',     // green — all criteria rated
+} as const;
+
+function createInterviewIcon(kind: keyof typeof INTERVIEW_COLORS, isSelected: boolean): L.DivIcon {
+  const size = isSelected ? 30 : 22;
+  const stroke = isSelected ? '#1d4ed8' : 'rgba(0,0,0,0.45)';
+  return L.divIcon({
+    className: 'interview-marker',
+    html: `<div style="
+      font-size: ${size}px;
+      line-height: 1;
+      color: ${INTERVIEW_COLORS[kind]};
+      -webkit-text-stroke: ${isSelected ? 2 : 1}px ${stroke};
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.4));
+    " aria-label="${kind === 'rated' ? 'Rated interview' : 'Scheduled interview'}">★</div>`,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+  });
+}
+
 // --- Inner component that accesses the map instance ---
-function MapController() {
-  const { derived, selectedProgramId, techHubs: majorCities } = useAppState();
-  const { bounds, markers } = derived;
+function MapController({ markers, bounds }: { markers: MapMarker[]; bounds: LatLngBounds | null }) {
+  const { selectedProgramId, techHubs: majorCities } = useAppState();
   const map = useMap();
   const previousSelectedId = useRef<string | null>(null);
 
@@ -137,6 +161,44 @@ function MapController() {
           </Tooltip>
         </Marker>
       ))}
+    </>
+  );
+}
+
+// --- Interview-mode markers: only interview programs, orange/green stars ---
+function InterviewMarkers({ markers }: { markers: MapMarker[] }) {
+  const { selectedProgramId, actions } = useAppState();
+  const { entries } = useInterviews();
+
+  const byProgramId = useMemo(() => {
+    const map = new Map<string, RankEntry>();
+    for (const e of entries) if (e.program) map.set(e.program.id, e);
+    return map;
+  }, [entries]);
+
+  return (
+    <>
+      {markers.map((marker) => {
+        const entry = byProgramId.get(marker.id);
+        if (!entry) return null;
+        const isSelected = marker.id === selectedProgramId;
+        const kind = entry.complete ? 'rated' : 'scheduled';
+        return (
+          <Marker
+            key={`iv-${marker.id}`}
+            position={[marker.lat, marker.lng]}
+            icon={createInterviewIcon(kind, isSelected)}
+            zIndexOffset={isSelected ? 1000 : 500}
+            eventHandlers={{ click: () => actions.setSelectedProgramId(marker.id) }}
+          >
+            <Tooltip direction="top" offset={[0, -12]}>
+              <span>
+                ★ {entry.record.name} — {entry.complete ? `rated, Elo ${Math.round(entry.standing.elo)}` : entry.record.date ? `scheduled ${entry.record.date}` : 'scheduled'}
+              </span>
+            </Tooltip>
+          </Marker>
+        );
+      })}
     </>
   );
 }
@@ -209,7 +271,17 @@ function ProgramMarkers() {
 // --- Main MapView component ---
 export function MapView() {
   const { derived } = useAppState();
-  const { bounds } = derived;
+  const { interviewMode, entries } = useInterviews();
+
+  // Interview mode: only interview programs, regardless of filters.
+  const interviewMarkers = useMemo(
+    () => buildMarkers(entries.flatMap((e) => (e.program ? [e.program] : []))),
+    [entries],
+  );
+  const interviewBounds = useMemo(() => computeBounds(interviewMarkers), [interviewMarkers]);
+
+  const markers = interviewMode ? interviewMarkers : derived.markers;
+  const bounds = interviewMode ? interviewBounds : derived.bounds;
 
   // Default center: continental US
   const defaultCenter: [number, number] = [39.8283, -98.5795];
@@ -232,22 +304,36 @@ export function MapView() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <MapController />
-        <ProgramMarkers />
+        <MapController markers={markers} bounds={bounds} />
+        {interviewMode ? <InterviewMarkers markers={interviewMarkers} /> : <ProgramMarkers />}
       </MapContainer>
 
-      {/* Signal legend */}
+      {/* Legend */}
       <div className="absolute top-2 right-2 bg-white/90 rounded-md shadow px-2.5 py-1.5 text-[10px] text-gray-600 z-[1000] leading-tight">
-        <div className="font-semibold text-gray-700 mb-0.5">Signals</div>
-        <div className="flex items-center gap-1">
-          <span style={{ color: SIGNAL_COLORS.gold, WebkitTextStroke: '0.5px rgba(0,0,0,0.45)' }}>★</span> Gold (IM)
-        </div>
-        <div className="flex items-center gap-1">
-          <span style={{ color: SIGNAL_COLORS.silver, WebkitTextStroke: '0.5px rgba(0,0,0,0.45)' }}>★</span> Silver (IM)
-        </div>
-        <div className="flex items-center gap-1">
-          <span style={{ color: SIGNAL_COLORS.signal, WebkitTextStroke: '0.5px rgba(0,0,0,0.45)' }}>★</span> Signal (FM)
-        </div>
+        {interviewMode ? (
+          <>
+            <div className="font-semibold text-gray-700 mb-0.5">Interviews ({interviewMarkers.length})</div>
+            <div className="flex items-center gap-1">
+              <span style={{ color: INTERVIEW_COLORS.scheduled, WebkitTextStroke: '0.5px rgba(0,0,0,0.45)' }}>★</span> Scheduled
+            </div>
+            <div className="flex items-center gap-1">
+              <span style={{ color: INTERVIEW_COLORS.rated, WebkitTextStroke: '0.5px rgba(0,0,0,0.45)' }}>★</span> Rating complete
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="font-semibold text-gray-700 mb-0.5">Signals</div>
+            <div className="flex items-center gap-1">
+              <span style={{ color: SIGNAL_COLORS.gold, WebkitTextStroke: '0.5px rgba(0,0,0,0.45)' }}>★</span> Gold (IM)
+            </div>
+            <div className="flex items-center gap-1">
+              <span style={{ color: SIGNAL_COLORS.silver, WebkitTextStroke: '0.5px rgba(0,0,0,0.45)' }}>★</span> Silver (IM)
+            </div>
+            <div className="flex items-center gap-1">
+              <span style={{ color: SIGNAL_COLORS.signal, WebkitTextStroke: '0.5px rgba(0,0,0,0.45)' }}>★</span> Signal (FM)
+            </div>
+          </>
+        )}
       </div>
 
       {/* CC BY 4.0 cities attribution — subtle inline */}
